@@ -365,20 +365,11 @@ const Hero = () => {
           </div>
         <div className="h-screen bg-black/40"/>
         
-        
-
-
-
-
-
-
-
-
 
         </div>
 
         {/* SECTION 7 LEADERS DASHBOARD */}
-        <div id="section7" className="bg-gray-200 h-screen w-full text-black/40 flex flex-col  items-center justify-center px-[rem]">
+        <div id="section7" className="bg-gray-200 h-screen w-full text-black/40 flex flex-col  items-center justify-center px-[rem] pt-5">
           <h3 className="font-bold font-arvo text-2xl text-white hover:text-black/90">PH H<sup>3</sup> GM,</h3>
           <h1 className="font-bold font-arvo text-4xl text-white py-10 hover:text-black/90">X GMs</h1>
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
