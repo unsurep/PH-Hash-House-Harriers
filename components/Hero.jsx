@@ -289,7 +289,7 @@ const Hero = () => {
         {/* SECTION 6  */}
         <div id='section6' className=' font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
           <div className="pt-">
-            <div className="bg-black/40 pt-24 md:px-[3rem]  ">
+            <div className="bg-black/40 pt-20 md:px-[3rem]  ">
               <Image src='/image/save.png' width={300} height={300} alt="image" className=" "/>
             </div>
             <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 pt-10 bg-black/40 md:gap-16 md:px-[3rem] px-[1rem]">
