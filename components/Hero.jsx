@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Arvo } from "next/font/google";
 import { useTypewriter } from "react-simple-typewriter";
 import { motion } from 'motion/react'
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { FaWhatsappSquare } from "react-icons/fa";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -452,11 +454,12 @@ const Hero = () => {
         </div>
 
         {/* SECTION 8 UP COMING EVENTS */}
-        <div className="bg-gray-50 min-h-screen w-full font-arvo">
+        <div id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem]">
           <div className="py-16">
             <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
           </div>
-
+            
+          {/* SWIPER */}
           <div className='pt-'>
             <Swiper
               slidesPerView={1}
@@ -560,12 +563,463 @@ const Hero = () => {
             </Swiper>
           </div>
           <h1 className="text-center py-5 text-red-400">Remember, REGO is KEY!</h1>
+        </div>
+
+        {/* SECTION 9 MARKET */}
+        <div id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo">
+          <h1 className="text-center text-2xl font-bold tracking-[5px] underline">MEET OUR APPROVED VENDORS</h1>
+          
+          {/* market swiper */}
+          <div className='py-12'>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+              }}
+              autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+              }}
+              // pagination={{clickable: true,}}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
+
+              {/* 1 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+                {/* 2 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+                {/* 3 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 4 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 5 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 6 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col">
+                      <p className="text-base font-bold font-arvo">Men Fashions</p>
+                      <p className="text-xs font-arvo">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 7 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 8 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 9 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvotext-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 10 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 11 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              {/* 12 */}
+              <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
+                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
+                      {/* <p>Contact</p> */}
+                    </div>
+
+                    <div className="flex items-center">
+                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+        </div>
+        
+        {/* Contact Us */}
+        <div className="px-[1rem] md:px-[3rem] bg-gray-50">
+          <h1>CONTACT US / MAKE A REPORT</h1>
+
+
 
         </div>
 
      
-
-      
     </div>
   )
 }
