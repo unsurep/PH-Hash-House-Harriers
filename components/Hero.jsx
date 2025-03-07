@@ -373,15 +373,15 @@ const Hero = () => {
               {/* down div */}
               <div className="flex gap-3 mt-5">
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740826125/2ap1_lkpbsv.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740826125/2ap1_lkpbsv.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740827057/2ap2_boeeom.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740827057/2ap2_boeeom.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740827309/2ap3_y0ftrl.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740827309/2ap3_y0ftrl.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
               </div>
 
@@ -401,15 +401,15 @@ const Hero = () => {
               {/* down div */}
               <div className="flex gap-3 mt-5">
               <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740829002/3ap1_c0mhyi.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740829002/3ap1_c0mhyi.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830037/3ap3_huobwp.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830037/3ap3_huobwp.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740829560/3ap2_ewp2ma.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740829560/3ap2_ewp2ma.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
               </div>
@@ -430,15 +430,15 @@ const Hero = () => {
               {/* down div */}
               <div className="flex gap-3 mt-5">
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830187/4ap1_igbuai.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830187/4ap1_igbuai.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830692/4ap2_cxmuzd.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830692/4ap2_cxmuzd.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
                 <div className="hvr-float-shadow">
-                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830885/4ap3_rqos1h.jpg' width={100} height={100} alt="image" className=""/>
+                  <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740830885/4ap3_rqos1h.jpg' width={100} height={100} alt="image" className="rounded"/>
                 </div>
 
               </div>
@@ -449,8 +449,117 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
-          
+        </div>
+
+        {/* SECTION 8 UP COMING EVENTS */}
+        <div className="bg-gray-50 min-h-screen w-full font-arvo">
+          <div className="py-16">
+            <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
+          </div>
+
+          <div className='pt-'>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+              }}
+              autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+              }}
+              // pagination={{clickable: true,}}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
+
+              {/* 1 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/trilogy.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+                {/* 2 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/sierra.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+                {/* 3 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/fgals.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 4 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/akwa.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 5 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/pan.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 6 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/bob.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 7 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/trilogy.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 8 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/sierra.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 9 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/fgals.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 10 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/akwa.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 11 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/pan.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 12 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/bob.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <h1 className="text-center py-5 text-red-400">Remember, REGO is KEY!</h1>
 
         </div>
 
