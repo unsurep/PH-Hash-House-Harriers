@@ -19,7 +19,7 @@ const Navbar=()=>{
     return (
         <div className={`${deliusFont.variable}`}>
             {/* Desktop view */}
-            <nav className="lg:flex items-center justify-between px-[3rem] py-3 font-delius shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] fixed z-50  w-full ring ring-red-200 hidden bg-white text-[20px] ">
+            <nav className="lg:flex items-center justify-between px-[3rem] py-3 font-delius shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] fixed z-50  w-full ring ring-red-200 hidden bg-white text-[20px] bg-opacity-45 backdrop-blur-xl">
                 <Link href={'/'}>
                     <div className="flex items-center gap-3">
                         <Image src='/image/logo.png' width={60} height={60} alt="logo"/>
@@ -38,16 +38,16 @@ const Navbar=()=>{
                     <li className="hvr-underline-from-center cursor-pointer">Misma</li>
                     <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
 
-                    <Link href={'/register'}>
+                    {/* <Link href={'/register'}>
                         <li className="cursor-pointer"><FaRegCircleUser className="text-2xl"/></li>
-                    </Link>
+                    </Link> */}
 
                 </ul>
 
             </nav>
 
             {/* mobile view */}
-            <nav className="flex lg:hidden items-center justify-between px-[1rem] py-2">
+            <nav className="flex lg:hidden items-center justify-between px-[1rem] py-2 bg-opacity-45 backdrop-blur-xl">
                 <Link href={'/'}>
                     <div className="flex items-center gap-1">
                         <Image src='/image/logo.png' width={50} height={50} alt="logo"/>
@@ -73,9 +73,9 @@ const Navbar=()=>{
                             <li>Misma</li>
                             <li>#NWTS</li>
 
-                            <Link href={'/register'}>
+                            {/* <Link href={'/register'}>
                                 <li>Register</li>
-                            </Link>
+                            </Link> */}
       
                         </ul>
                     </div>

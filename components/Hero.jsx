@@ -12,10 +12,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
-// import required modules
-import { Pagination } from 'swiper/modules';
+
 
 const arvoFont= Arvo ({
   subsets: ["latin"],
@@ -28,15 +27,14 @@ const arvoFont= Arvo ({
 const Hero = () => {
   const [text] =useTypewriter({
     words: ['Port Harcourt', 'Hash House Harriers','Port Harcourt Hash House Harriers']
-    
-
   })
+
   return (
     <div className={`${arvoFont.variable}`}>
       {/* SECTION 1 */}
-        <section id='section1' className='h-screen bg-cover  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
+        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
-              <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo">Welcome to</h1>
+              <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}</h1>
               <p className='text-center text-base md:text-[20px] md:pt-[2rem] pt-[2rem] text-black/90 font-bold font-arvo'>We are a drinking club with a running problem.</p>
               <p className='text-center pt-[1rem] text-sm font-arvo text-black/90 font-bold md:text-xl'>We drink beer to save water</p>
@@ -84,7 +82,7 @@ const Hero = () => {
         <section id="section2" className="h-[20rem] font-arvo py-[3rem] px-[3rem] bg-red-50 ">
           <div className="space-y-5">
             <h3 className="text-sm md:text-lg">A community of Runners and Beer lovers</h3>
-            <h3 className="text-sm md:text-3xl">Hash House Harriers</h3>
+            <h3 className="text-sm md:text-3xl tracking-[5px]">Hash House Harriers</h3>
           </div>
 
           <div className="pt-3">
@@ -94,14 +92,14 @@ const Hero = () => {
         </section>
 
         {/* SECTION 3 */}
-        <div id="section3" className="px-[3rem] bg-gray-300/20 py-16 relative">
+        <div id="section3" className="px-[3rem] font-arvo bg-gray-300/20 py-16 relative">
           <div>
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740592027/pic1_mss4ds.jpg' width={700} height={500} alt="image" className="rounded-xl"/>
           </div>
 
           <div className="md:absolute top-[5rem] pr-[16px] pb-5 right-[8rem] font-arvo h-[35%] md:bg-red-100/80 w-fit rounded-lg">
             <div className="right-[24rem] h-[100%] bg-gray-50/90  px-[1rem] py-10 rounded-lg">
-              <h1 className="font-bold text-2xl ">Hiking with your running shoes ?</h1>
+              <h1 className="font-bold text-2xl tracking-[5px]">Hiking with your running shoes ?</h1>
               <p className="pt-3 leading-5">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from DGM Bigger  <br /> Twerk for more information else OTILO!</p>
             </div>
 
@@ -117,7 +115,7 @@ const Hero = () => {
         </div>
 
         {/* Section 4 Swiper Js */}
-        <div id="section4" className="md:px-[3rem] px-[1rem] bg-gray-300/20 pb-[2rem]">
+        <div id="section4" className="md:px-[3rem] font-arvo px-[1rem] bg-gray-300/20 pb-[2rem]">
         
           <Swiper
             slidesPerView={1}
@@ -234,7 +232,7 @@ const Hero = () => {
           
           
         {/* Section 5 SOFT BABY */}
-        <div id="section5" className="bg-black text-gray-200/50 h-[40%] lg:flex font-arvo pb-12 relative">
+        <div id="section5" className="bg-black text-gray-200/50 h-[40%] lg:flex  pb-12 relative font-arvo">
           <div>
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740602752/DSC_5481_zen0c1.jpg' width={700} height={100} alt="image"/>
           </div>
@@ -289,9 +287,9 @@ const Hero = () => {
         </div>
 
         {/* SECTION 6  */}
-        <div id='section6' className=' h-screen bg-cover bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
-          <div className="">
-            <div className="bg-black/40 pt-5 md:px-[3rem] ">
+        <div id='section6' className=' font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
+          <div className="pt-">
+            <div className="bg-black/40 pt-24 md:px-[3rem]  ">
               <Image src='/image/save.png' width={300} height={300} alt="image" className=" "/>
             </div>
             <div className="grid grid-cols-1 gap-2 md:grid md:grid-cols-3 pt-10 bg-black/40 md:gap-16 md:px-[3rem] px-[1rem]">
@@ -348,30 +346,20 @@ const Hero = () => {
                   <p className="text-xs md:text-lg">Rego is a hasher's key. No Rego, No Hashing.</p>
                 </div>
               </div>
-
-              
-
-
-
-
-
-
-
-
-
-
-
             </div>
           </div>
+          
         <div className="h-screen bg-black/40"/>
         
 
         </div>
 
         {/* SECTION 7 LEADERS DASHBOARD */}
-        <div id="section7" className="bg-gray-200 h-screen w-full text-black/40 flex flex-col  items-center justify-center px-[rem] pt-[6rem]">
-          <h3 className="font-bold font-arvo text-2xl text-white hover:text-black/90">PH H<sup>3</sup> GM,</h3>
-          <h1 className="font-bold font-arvo text-4xl text-white py-10 hover:text-black/90">X GMs</h1>
+        <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
+          <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
+          <h3 className="font-delius text-gray-400">&</h3>
+          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs</h1>
+
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
           
             {/* Always pumping */}
@@ -460,31 +448,14 @@ const Hero = () => {
                 <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
               </div>
             </div>
-
-            {/* Push Doctor */}
-            <div>
-              {/* up div */}
-              {/* <div className="text-center items-center flex justify-center">
-                <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740825803/ap4_d0ioxg.jpg' width={300} height={300} alt="image" className=""/>
-              </div> */}
-
-              {/* down div */}
-              {/* <div className="flex gap-3">
-                <div>image</div>
-                <div>image</div>
-                <div>image</div>
-              </div> */}
-
-              {/* <div className="flex">
-                <p>name</p>
-                <p className="ml-auto">desc</p>
-              </div> */}
-            </div>
           </div>
           
           
 
         </div>
+
+     
+
       
     </div>
   )
