@@ -112,7 +112,7 @@ const Hero = () => {
         </section>
 
         {/* SECTION 3 */}
-        <div id="section3" className="px-[3rem] font-arvo bg-gray-300/20 py-16 relative">
+        <section id="section3" className="px-[3rem] font-arvo bg-gray-300/20 py-16 relative">
           <div  data-aos="fade-up" data-aos-duration="1000">
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740592027/pic1_mss4ds.jpg' width={700} height={500} alt="image" className="rounded-xl"/>
           </div>
@@ -132,10 +132,10 @@ const Hero = () => {
           </div>
 
 
-        </div>
+        </section>
 
         {/* Section 4 Swiper Js */}
-        <div id="section4" className="md:px-[3rem] font-arvo px-[1rem] bg-gray-300/20 pb-[2rem]">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section4" className="md:px-[3rem] font-arvo px-[1rem] bg-gray-300/20 pb-[2rem]">
         
           <Swiper
             slidesPerView={1}
@@ -300,14 +300,14 @@ const Hero = () => {
           </div>
             
           {/* small screen */}
-          <div className="absolute top-[37rem] md:hidden right-[1rem]">
+          <div data-aos="fade-up-left" data-aos-duration="1000" className="absolute top-[37rem] md:hidden right-[1rem]">
             <Image src='/image/w-can.png' width={30} height={30} alt="image of water can"/>
           </div>
           
         </div>
 
         {/* SECTION 6  */}
-        <div id='section6' className=' font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
+        <div data-aos="fade-up" data-aos-duration="1000" id='section6' className=' font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
           <div className="pt-">
             <div className="bg-black/40 pt-20 md:px-[3rem]  ">
               <Image src='/image/save.png' width={300} height={300} alt="image" className=" "/>
@@ -375,7 +375,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 7 LEADERS DASHBOARD */}
-        <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
           <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs</h1>
@@ -472,7 +472,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 8 UP COMING EVENTS */}
-        <div id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem]">
+        <div data-aos="fade-up" data-aos-duration="1000" id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem]">
           <div className="py-16">
             <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
           </div>
@@ -584,7 +584,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 9 MARKET */}
-        <div id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo">
           <h1 className="text-center text-2xl font-bold tracking-[5px] underline">MEET OUR APPROVED VENDORS</h1>
           
           {/* market swiper */}
@@ -598,7 +598,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 8000,
+              delay: 5000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -1030,7 +1030,7 @@ const Hero = () => {
         </div>
         
         {/* Contact Us */}
-        <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50  ">
+        <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50/90  ">
           <h1 className="text-center font-arvo text-3xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
 
           <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
@@ -1079,8 +1079,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-     
     </div>
   )
 }
