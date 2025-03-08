@@ -17,6 +17,18 @@ import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  animatedClassName: 'aos-animate',
+  useClassNames: false,
+  duration: 400,
+  easing: 'ease',
+  once: false,
+  anchorPlacement: 'top-bottom',
+});
+
 
 const arvoFont= Arvo ({
   subsets: ["latin"],
@@ -36,7 +48,7 @@ const Hero = () => {
   return (
     <div className={`${arvoFont.variable}`}>
       {/* SECTION 1 */}
-        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
+        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat ' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
@@ -50,7 +62,7 @@ const Hero = () => {
             {/* modal */}
             <div className="flex items-center justify-center pt-[1rem] min-h-[30%]">
              
-              <button className="btn font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Run Information:</button>
+              <button className="btn bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Run Information:</button>
               <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-11/12 max-w-5xl font-arvo">
                   <h3 className="font-bold text-lg ">Hashers RU!!!</h3>
@@ -80,10 +92,14 @@ const Hero = () => {
                 </div>
               </dialog>
             </div>
-          </section>
+        </section>
 
         {/* SECTION 2 */}
-        <section id="section2" className="h-[20rem] font-arvo py-[3rem] px-[3rem] bg-red-50 ">
+        <section
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        
+          id="section2" className="h-[20rem] font-arvo py-[3rem] px-[3rem] bg-red-50 ">
           <div className="space-y-5">
             <h3 className="text-sm md:text-lg">A community of Runners and Beer lovers</h3>
             <h3 className="text-sm md:text-3xl tracking-[5px]">Hash House Harriers</h3>
@@ -97,12 +113,12 @@ const Hero = () => {
 
         {/* SECTION 3 */}
         <div id="section3" className="px-[3rem] font-arvo bg-gray-300/20 py-16 relative">
-          <div>
+          <div  data-aos="fade-up" data-aos-duration="1000">
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740592027/pic1_mss4ds.jpg' width={700} height={500} alt="image" className="rounded-xl"/>
           </div>
 
-          <div className="md:absolute top-[5rem] pr-[16px] pb-5 right-[8rem] font-arvo h-[35%] md:bg-red-100/80 w-fit rounded-lg">
-            <div className="right-[24rem] h-[100%] bg-gray-50/90  px-[1rem] py-10 rounded-lg">
+          <div  className="md:absolute top-[5rem] pr-[16px] pb-5 right-[8rem] font-arvo h-[35%] md:bg-red-100/80 w-fit rounded-lg">
+            <div data-aos="fade-left" data-aos-duration="1000"  className="right-[24rem] h-[100%] bg-gray-50/90  px-[1rem] py-10 rounded-lg">
               <h1 className="font-bold text-2xl tracking-[5px]">Hiking with your running shoes ?</h1>
               <p className="pt-3 leading-5">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from DGM Bigger  <br /> Twerk for more information else OTILO!</p>
             </div>
@@ -236,7 +252,7 @@ const Hero = () => {
           
           
         {/* Section 5 SOFT BABY */}
-        <div id="section5" className="bg-black text-gray-200/50 h-[40%] lg:flex  pb-12 relative font-arvo">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section5" className="bg-black text-gray-200/50 h-[40%] lg:flex  pb-12 relative font-arvo">
           <div>
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740602752/DSC_5481_zen0c1.jpg' width={700} height={100} alt="image"/>
           </div>
@@ -279,7 +295,7 @@ const Hero = () => {
           </div>
 
             {/*tablet screen hidden  */}
-          <div className="absolute top-[20rem] md:block hidden right-[2rem]">
+          <div data-aos="fade-up-left" data-aos-duration="1000" className="absolute top-[20rem] md:block hidden right-[2rem]">
             <Image src='/image/w-can.png' width={100} height={100} alt="image of water can"/>
           </div>
             
@@ -1019,7 +1035,7 @@ const Hero = () => {
 
           <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
             {/* div A */}
-            <form className="px-6 formbg opacity-80 py-7 rounded flex flex-col justify-items-center">
+            <form data-aos="fade-right" data-aos-duration="1000" className="px-6  formbg opacity-80 py-7 rounded flex flex-col justify-items-center">
               {/* Hash handle */}
               <div className="font-arvo flex flex-col">
                 <label>Hash Handle</label>
