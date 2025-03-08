@@ -603,17 +603,17 @@ const Hero = () => {
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
               }}
-              autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-              }}
+              // autoplay={{
+              // delay: 5000,
+              // disableOnInteraction: false,
+              // }}
               // pagination={{clickable: true,}}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
 
               {/* 1 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
