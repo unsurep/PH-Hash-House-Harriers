@@ -31,7 +31,7 @@ const arvoFont= Arvo ({
 
 const Hero = () => {
 
-  
+
   useEffect(() => {
     AOS.init({
       animatedClassName: 'aos-animate',
@@ -79,9 +79,9 @@ const Hero = () => {
                     </div>
                     <h3 className="font-semibold">Weekly Run Information :</h3>
                     <ul className="space-y-3">
-                      <li>Run No: 1005</li>
-                      <li>Date: Friday 28th February, 2025</li>
-                      <li>Venue: Nwanyi Enugu, GRA Phase II, Port Harcourt</li>
+                      <li>Run No: 1007</li>
+                      <li>Date: Friday 14th March, 2025</li>
+                      {/* <li>Venue:  GRA Phase II, Port Harcourt</li> */}
                       <li>Hare: PH H3Mismanagement</li>
                       <li>Rego: N1,500</li>
                       <li>Time: 5:00 pm</li>
