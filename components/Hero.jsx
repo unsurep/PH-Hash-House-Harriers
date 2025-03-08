@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Arvo } from "next/font/google";
-import { useTypewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from 'motion/react'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -28,7 +28,9 @@ const arvoFont= Arvo ({
 
 const Hero = () => {
   const [text] =useTypewriter({
-    words: ['Port Harcourt', 'Hash House Harriers','Port Harcourt Hash House Harriers']
+    words: ['Port Harcourt', 'Hash House Harriers','Port Harcourt Hash House Harriers'],
+    loop: 2, 
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
 
   return (
@@ -37,7 +39,7 @@ const Hero = () => {
         <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
-              <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}</h1>
+              <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
               <p className='text-center text-base md:text-[20px] md:pt-[2rem] pt-[2rem] text-black/90 font-bold font-arvo'>We are a drinking club with a running problem.</p>
               <p className='text-center pt-[1rem] text-sm font-arvo text-black/90 font-bold md:text-xl'>We drink beer to save water</p>
               <p className='text-center text-base font-arvo text-black/90 font-bold md:text-xl flex items-center justify-center gap-2'>Join us every Friday at 5pm!
@@ -580,7 +582,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 2500,
+              delay: 8000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -594,7 +596,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -608,7 +610,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-items-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -616,7 +618,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -629,7 +631,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -643,7 +645,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -651,7 +653,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -664,7 +666,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -678,7 +680,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -686,7 +688,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -699,7 +701,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -713,7 +715,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -721,7 +723,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -734,7 +736,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -748,7 +750,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -756,7 +758,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -769,7 +771,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -783,7 +785,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col">
                       <p className="text-base font-bold font-arvo">Men Fashions</p>
                       <p className="text-xs font-arvo">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -791,7 +793,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -804,7 +806,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -818,7 +820,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -826,7 +828,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -839,7 +841,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -853,7 +855,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -861,7 +863,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -874,7 +876,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -888,7 +890,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvotext-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -896,7 +898,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -909,7 +911,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -923,7 +925,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -931,7 +933,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -944,7 +946,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -958,7 +960,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -966,7 +968,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -979,7 +981,7 @@ const Hero = () => {
                     <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
-                  <ul className="flex items-center gap-2 py-4">
+                  <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
                       <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
                     </li>
@@ -993,7 +995,7 @@ const Hero = () => {
                     </li>
                   </ul>
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
@@ -1001,7 +1003,7 @@ const Hero = () => {
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-3xl text-green-500 rounded-full"/></p>
+                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
                     </div>
                   </div>
                 </div>
@@ -1012,11 +1014,54 @@ const Hero = () => {
         </div>
         
         {/* Contact Us */}
-        <div className="px-[1rem] md:px-[3rem] bg-gray-50">
-          <h1>CONTACT US / MAKE A REPORT</h1>
+        <div id="section10" className="px-[1rem] md:px-[3rem] bg-gray-50 ">
+          <h1 className="text-center font-arvo text-3xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
 
+          <div className="md:flex  justify-center items-center">
+            {/* div A */}
+            <form>
+              {/* Hash handle */}
+              <div className="font-arvo flex flex-col  gap-3">
+                <label>Hash Handle</label>
+                <input type="text"
+                placeholder="Enter hash handle"
+                className="px-4 py-2"/>
+              </div>
+              
+              {/* Name of kennel */}
+              <div className="font-arvo flex flex-col  gap-3">
+                <label>Name of Kennel</label>
+                <input type="text"
+                placeholder="Enter kennel name"
+                className="px-4 py-2"/>
+              </div>
 
+              {/* Subject */}
+              <div className="font-arvo flex flex-col  gap-3">
+                <label>Subject Matter</label>
+                <input type="text"
+                placeholder="Enter subject"
+                className="px-4 py-2"/>
+              </div>
 
+              {/* Message */}
+              <div className="font-arvo flex flex-col  gap-3">
+                <label>Message</label>
+                <textarea type="text"
+                placeholder="Enter Message"
+                className="px-4 py-2"/>
+              </div>
+
+              <div className="flex items-center justify-center py-5">
+                <button type="submit" className="w-full bg-gray-100 hover:bg-gray-300/60 py-2 rounded">Submit</button>
+              </div>
+            </form>
+
+            {/* Div B */}
+            <div>
+              <Image src='/image/climb.avif' width={700} height={700} alt="image" className="rounded"/>
+            </div>
+          </div>
         </div>
 
      
