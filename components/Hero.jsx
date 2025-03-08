@@ -1014,42 +1014,42 @@ const Hero = () => {
         </div>
         
         {/* Contact Us */}
-        <div id="section10" className="px-[1rem] md:px-[3rem] bg-gray-50 ">
+        <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50  ">
           <h1 className="text-center font-arvo text-3xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
 
-          <div className="md:flex  justify-center items-center">
+          <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
             {/* div A */}
-            <form>
+            <form className="px-6 formbg opacity-80 py-7 rounded flex flex-col justify-items-center">
               {/* Hash handle */}
-              <div className="font-arvo flex flex-col  gap-3">
+              <div className="font-arvo flex flex-col">
                 <label>Hash Handle</label>
                 <input type="text"
                 placeholder="Enter hash handle"
-                className="px-4 py-2"/>
+                className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
               
               {/* Name of kennel */}
-              <div className="font-arvo flex flex-col  gap-3">
+              <div className="font-arvo flex flex-col py-3">
                 <label>Name of Kennel</label>
                 <input type="text"
                 placeholder="Enter kennel name"
-                className="px-4 py-2"/>
+                className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
 
               {/* Subject */}
-              <div className="font-arvo flex flex-col  gap-3">
+              <div className="font-arvo flex flex-col">
                 <label>Subject Matter</label>
                 <input type="text"
                 placeholder="Enter subject"
-                className="px-4 py-2"/>
+                className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
 
               {/* Message */}
-              <div className="font-arvo flex flex-col  gap-3">
+              <div className="font-arvo flex flex-col py-3">
                 <label>Message</label>
                 <textarea type="text"
                 placeholder="Enter Message"
-                className="px-4 py-2"/>
+                className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
 
               <div className="flex items-center justify-center py-5">
