@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Arvo } from "next/font/google";
@@ -19,15 +19,6 @@ import 'swiper/css/navigation';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init({
-  animatedClassName: 'aos-animate',
-  useClassNames: false,
-  duration: 400,
-  easing: 'ease',
-  once: false,
-  anchorPlacement: 'top-bottom',
-});
 
 
 const arvoFont= Arvo ({
@@ -39,6 +30,21 @@ const arvoFont= Arvo ({
 
 
 const Hero = () => {
+
+  
+  useEffect(() => {
+    AOS.init({
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
+    }, []);
+
+
+
   const [text] =useTypewriter({
     words: ['Port Harcourt', 'Hash House Harriers','Port Harcourt Hash House Harriers'],
     loop: 2, 
