@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Arvo } from "next/font/google";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from 'motion/react'
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 // Import Swiper React components
@@ -18,7 +17,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css'; 
 
 
 const arvoFont= Arvo ({
@@ -54,7 +53,7 @@ const Hero = () => {
   return (
     <div className={`${arvoFont.variable}`}>
       {/* SECTION 1 */}
-        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat ' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
+        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
@@ -381,7 +380,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 7 LEADERS DASHBOARD */}
-        <div data-aos="fade-up" data-aos-duration="1000" id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
+        <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
           <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs</h1>
@@ -389,7 +388,7 @@ const Hero = () => {
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
           
             {/* Always pumping */}
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
               {/* up div */}
               <div className="text-center items-center flex justify-center hvr-float-shadow ">
                 
@@ -418,7 +417,7 @@ const Hero = () => {
             </div>
 
             {/* Unsure */}
-            <div>
+            <div data-aos="fade-up" data-aos-duration="2000">
               {/* up div */}
               <div className="text-center items-center flex justify-center hvr-float-shadow">
                 <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740824191/ap2_mjuzip.jpg' width={300} height={300} alt="image" className="ring ring-red-500 rounded-lg"/>
@@ -447,7 +446,7 @@ const Hero = () => {
             </div>
 
             {/* Bigger Twerk */}
-            <div>
+            <div data-aos="fade-up" data-aos-duration="3000">
               {/* up div */}
               <div className="text-center items-center flex justify-center hvr-float-shadow">
                 <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740824708/ap3_w8jziq.jpg' width={300} height={300} alt="image" className="ring ring-red-500 rounded-lg"/>
@@ -603,11 +602,11 @@ const Hero = () => {
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
               }}
-              // autoplay={{
-              // delay: 5000,
-              // disableOnInteraction: false,
-              // }}
-              // pagination={{clickable: true,}}
+              autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              }}
+              pagination={{clickable: true,}}
               navigation={true}
               modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
 

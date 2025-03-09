@@ -32,8 +32,14 @@ const Navbar=()=>{
                 </Link>
 
                 <ul className="flex items-center gap-5 " >
-                    <li className="hvr-underline-from-center cursor-pointer">Home</li>
-                    <li className="hvr-underline-from-center cursor-pointer">About</li>
+                    <Link href={'/'}>
+                        <li className="hvr-underline-from-center cursor-pointer">Home</li>
+                    </Link>
+
+                    <Link href={'/about'}>
+                        <li className="hvr-underline-from-center cursor-pointer">About</li>
+                    </Link>
+
                     <li className="hvr-underline-from-center cursor-pointer">Photo-Blast</li>
                     <li className="hvr-underline-from-center cursor-pointer">Misma</li>
                     <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
