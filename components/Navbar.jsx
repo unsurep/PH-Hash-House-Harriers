@@ -71,16 +71,16 @@ const Navbar=()=>{
                     </div>
                 </Link>
 
-               <div>
+               <div className="">
                <div className="drawer drawer-end">
                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
                         {/* Page content here */}
                         <label htmlFor="my-drawer-4" className="drawer-button bt btn-primary"><IoMdMenu className="text-black text-3xl"/></label>
                     </div>
-                    <div className="drawer-side z-50">
+                    <div className="drawer-side z-100 ">
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <ul className="menu bg-base-200 text-base-content min-h-full w-56 px-4 space-y-8 text-base pt-8 font-delius">
+                        <ul className="menu bg-base-200 text-base-content text-center min-h-full w-56 px-4 space-y-5 pt-5 font-delius relative z-50">
 
                             <Link href={'/'}>
                                 <li>Home</li>
