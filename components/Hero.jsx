@@ -29,6 +29,17 @@ const arvoFont= Arvo ({
 
 
 const Hero = () => {
+  const [background, setBackground] = useState ('/image/about1.jpg')
+  const [write, setWrite] = useState ("Another welcome note to market tehiljem to the world.")
+
+  useEffect (() =>{
+    const timeout = setTimeout(() => {
+      setBackground('/image/bg-sec1.avif');
+      setWrite('Now the second background and the new / second text would appear how u want it ')
+    }, 9000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
 
   useEffect(() => {
@@ -53,7 +64,7 @@ const Hero = () => {
   return (
     <div className={`${arvoFont.variable}`}>
       {/* SECTION 1 */}
-        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/bg-sec1.avif')" }}>
+        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: `url(${background})` }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
