@@ -5,6 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
 import { SocialIcon } from 'react-social-icons';
+import Link from 'next/link';
 
 
 const deliusFont= Delius ({
@@ -69,11 +70,26 @@ const Footer = () => {
             <div className='flex flex-col md:ml-auto scale-in-ver-bottom'>
                 <h3 className='text-3xl hvr-underline-from-center cursor-pointer w-fit'>Navigate</h3>
                 <ul className='pt-2 flex flex-col gap-4'>
-                    <li className='hvr-underline-from-center cursor-pointer w-fit'>Home</li>
-                    <li className='hvr-underline-from-center cursor-pointer w-fit'>About</li>
-                    <li className='hvr-underline-from-center cursor-pointer w-fit'>Photo-Blast</li>
-                    <li className='hvr-underline-from-center cursor-pointer w-fit'>Misma</li>
-                    <li className='hvr-underline-from-center cursor-pointer w-fit'>#NWTS</li>
+
+                    <Link href={'/'}>
+                        <li className='hvr-underline-from-center cursor-pointer w-fit'>Home</li>
+                    </Link>
+
+                    <Link href={'/about'}>
+                        <li className='hvr-underline-from-center cursor-pointer w-fit'>About</li>
+                    </Link>
+
+                   <Link href={'/photo-blast'}>
+                        <li className='hvr-underline-from-center cursor-pointer w-fit'>Photo-Blast</li>
+                   </Link>
+
+                   <Link href={'/misma'}>
+                        <li className='hvr-underline-from-center cursor-pointer w-fit'>Misma</li>
+                   </Link>
+
+                    <Link href={'/nwts'}>
+                        <li className='hvr-underline-from-center cursor-pointer w-fit'>#NWTS</li>
+                    </Link>
                 </ul>
             </div>
         </footer>

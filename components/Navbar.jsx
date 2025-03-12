@@ -40,9 +40,17 @@ const Navbar=()=>{
                         <li className="hvr-underline-from-center cursor-pointer">About</li>
                     </Link>
 
-                    <li className="hvr-underline-from-center cursor-pointer">Photo-Blast</li>
-                    <li className="hvr-underline-from-center cursor-pointer">Misma</li>
-                    <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
+                   <Link href={'/photo-blast'}>
+                        <li className="hvr-underline-from-center cursor-pointer">Photo-Blast</li>        
+                   </Link>
+
+                    <Link href={'/misma'}>
+                        <li className="hvr-underline-from-center cursor-pointer">Misma</li>
+                    </Link>
+
+                    <Link href={'/nwts'}>
+                        <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
+                    </Link>
 
                     {/* <Link href={'/register'}>
                         <li className="cursor-pointer"><FaRegCircleUser className="text-2xl"/></li>
@@ -72,12 +80,27 @@ const Navbar=()=>{
                     </div>
                     <div className="drawer-side z-50">
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <ul className="menu bg-base-200 text-base-content min-h-full w-56 px-4 space-y-5 pt-5 font-delius">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Photo-Blast</li>
-                            <li>Misma</li>
-                            <li>#NWTS</li>
+                        <ul className="menu bg-base-200 text-base-content min-h-full w-56 px-4 space-y-8 text-base pt-8 font-delius">
+
+                            <Link href={'/'}>
+                                <li>Home</li>
+                            </Link>
+
+                            <Link href={'/about'}>
+                                <li>About</li>
+                            </Link>
+
+                            <Link href={'/photo-blast'}>
+                                <li>Photo-Blast</li>
+                            </Link>
+
+                            <Link href={'/misma'}>
+                                <li>Misma</li>
+                            </Link>
+
+                           <Link href={'/nwts'}>
+                                <li>#NWTS</li>
+                           </Link>
 
                             {/* <Link href={'/register'}>
                                 <li>Register</li>
