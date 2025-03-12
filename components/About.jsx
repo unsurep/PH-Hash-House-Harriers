@@ -19,17 +19,17 @@ const About = () => {
 
         {/* about1 */}
         <article id='about1' className='bg-gray-50 px-[1rem] md:px-[3rem] font-arvo flex flex-col gap-5 py-12 text-base'>
-          <p className=' '>
+          <div className=' '>
             Port Hash House Harriers, commonly referred to as PH H<sup>3</sup> or PH-HHH, is one of the many chapters—or "Kennels," as they are called in Hash parlance—across Nigeria. The group held its first run in the 1980s.
-          </p>
+          </div>
 
-          <p>
+          <div>
             PH H<sup>3</sup> adopted the vulture as its emblem due to the frequent sightings of vultures throughout Port Harcourt back then in the 80's. The runs are marked using chalk symbols on the ground, incorporating a mix of checks and false trails known as "check-backs." On average, a PH H<sup>3</sup> run lasts approximately 60 minutes.
-          </p>
+          </div>
 
-          <p>
+          <div>
             Over the years, the kennel has achieved significant success, including hosting the 2018 Nash Hash in Calabar, which attracted over 800 hashers from around the world. Despite periods of mismanagement and changing leadership, PH H<sup>3</sup> has remained resilient, with its legacy traced through various Grand Masters, from DGM Bush Doc to DGM Bigger Twerk, and down to DGM One Sure Player and now GM Always Pumping.
-          </p>
+          </div>
         </article>
 
          {/* about 2 */}
@@ -45,9 +45,9 @@ const About = () => {
             <div className=' flex flex-col mx-auto gap-5 justify-center relative'>
               <h1 className='text-center text-xl lg:text-4xl font-semibold tracking-[5px]'>Follow the Hare…</h1>
 
-              <p className='tracking-wide text-sm md:text-base px-2'>The hares mark their trail with paper, chalk, sawdust,  strings, <br /> or colored flour, depending on the environment and weather.</p>
+              <div className='tracking-wide text-sm md:text-base px-2'>The hares mark their trail with paper, chalk, sawdust,  strings, <br /> or colored flour, depending on the environment and weather.</div>
 
-              <p className='tracking-wide text-sm md:text-base px-2'>Special marks may be used to indicate a false trail, a backtrack, <br /> a shortcut, or a turn. The most commonly used mark is a “check”, <br /> indicating that hashers will have to search in any direction to find <br /> the continuation of the trail. Trails may contain a “beer check”, <br /> where the pack stops to consume beer, water, or snacks, allowing <br /> any stragglers to catch up to the group.</p>
+              <div className='tracking-wide text-sm md:text-base px-2'>Special marks may be used to indicate a false trail, a backtrack, <br /> a shortcut, or a turn. The most commonly used mark is a “check”, <br /> indicating that hashers will have to search in any direction to find <br /> the continuation of the trail. Trails may contain a “beer check”, <br /> where the pack stops to consume beer, water, or snacks, allowing <br /> any stragglers to catch up to the group.</div>
 
               <div className='absolute bottom-0 right-0'>
                 <Image src='/image/w-can.png' width={70} height={70} alt='image' />
@@ -63,9 +63,9 @@ const About = () => {
             <div >
               <h1 className='py-8 tracking-[5px] text-xl lg:text-4xl font-semibold'>Red Dress</h1>
               <div>
-                <p className='tracking-wide text-sm md:text-base '>An event held annually by some chapters is the “Red Dress Run”. <br /> In 1987, Donna Rhinehart was taken to a hash in Long Beach, <br /> California, to be introduced to the sport. She was invited to <br /> “wait in the truck” until her host returned. Instead Rhinehart <br /> joined the hash in her red dress. The following year, the <br /> San Diego Hash House Harriers sent Rhinehart an airline <br /> ticket to attend the inaugural “Red Dress Run”. Hundreds <br /> of hashers wore red dresses for the event which was widely <br /> covered by local media.</p>
+                <div className='tracking-wide text-sm md:text-base '>An event held annually by some chapters is the “Red Dress Run”. <br /> In 1987, Donna Rhinehart was taken to a hash in Long Beach, <br /> California, to be introduced to the sport. She was invited to <br /> “wait in the truck” until her host returned. Instead Rhinehart <br /> joined the hash in her red dress. The following year, the <br /> San Diego Hash House Harriers sent Rhinehart an airline <br /> ticket to attend the inaugural “Red Dress Run”. Hundreds <br /> of hashers wore red dresses for the event which was widely <br /> covered by local media.</div>
 
-                <p className='py-8 tracking-wide text-sm md:text-base'>In addressing the crowd, Rhinehart suggested that such <br /> hashes might be held to raise funds for local charities. <br /> Today the Red Dress Run is another part of the Nash <br /> Hash in Nigeria (an annual event hosted by different kennels in Nigeria).</p>
+                <div className='py-8 tracking-wide text-sm md:text-base'>In addressing the crowd, Rhinehart suggested that such <br /> hashes might be held to raise funds for local charities. <br /> Today the Red Dress Run is another part of the Nash <br /> Hash in Nigeria (an annual event hosted by different kennels in Nigeria).</div>
               </div>
             </div>
 
@@ -85,9 +85,9 @@ const About = () => {
             <div className=' flex flex-col mx-auto gap-5 justify-center relative'>
               <h1 className='text-center text-xl lg:text-4xl font-semibold tracking-[5px]'>Special Events...</h1>
 
-              <p className='tracking-wide text-sm md:text-base px-2'>The Bob Marley Run is PHH3's special event, celebrating <br /> reggae legend  Bob Marley with a themed hash run and <br /> lively festivities.</p>
+              <div className='tracking-wide text-sm md:text-base px-2'>The Bob Marley Run is PHH3's special event, celebrating <br /> reggae legend  Bob Marley with a themed hash run and <br /> lively festivities.</div>
 
-              <p className='tracking-wide text-sm md:text-base px-2'>Join PH H<sup>3</sup> legendary Bob Marley Run—a vibrant, <br /> reggae-infused adventure through epic trails, tricky <br /> checks, and ice-cold beer stops! Feel the rhythm, <br /> blaze the trails, and sip freely as we run, chant, and <br /> celebrate unity. One love, one trail, endless vibes!</p>
+              <div className='tracking-wide text-sm md:text-base px-2'>Join PH H<sup>3</sup> legendary Bob Marley Run—a vibrant, <br /> reggae-infused adventure through epic trails, tricky <br /> checks, and ice-cold beer stops! Feel the rhythm, <br /> blaze the trails, and sip freely as we run, chant, and <br /> celebrate unity. One love, one trail, endless vibes!</div>
 
               <div className='absolute bottom-0 right-0'>
                 <Image src='/image/w-can.png' width={70} height={70} alt='image' />
@@ -104,44 +104,44 @@ const About = () => {
           <div className=' md:grid grid-cols-3 gap-6 '>
             {/* 1 */}
             <div className='text-base'>
-              <p>1 Circle</p>
-              <p>Most hash events conclude with a lively gathering known as the "circle"—or, less commonly, "religion." Led by chapter leaders, this tradition fosters camaraderie through socializing, spirited drinking songs, and lighthearted recognition of members. It is a time to formally name hashers, share important announcements, and celebrate the mischief of the trail. The Grandmaster (GM), Religious Advisor (RA), or a dedicated committee may steer the circle, but spontaneous participation is always encouraged. Expect laughter, camaraderie, and plenty of beer-fueled storytelling!</p>
+              <h3>1 Circle</h3>
+              <div>Most hash events conclude with a lively gathering known as the "circle"—or, less commonly, "religion." Led by chapter leaders, this tradition fosters camaraderie through socializing, spirited drinking songs, and lighthearted recognition of members. It is a time to formally name hashers, share important announcements, and celebrate the mischief of the trail. The Grandmaster (GM), Religious Advisor (RA), or a dedicated committee may steer the circle, but spontaneous participation is always encouraged. Expect laughter, camaraderie, and plenty of beer-fueled storytelling!</div>
             </div>
 
             {/* 2 */}
             <div className='text-base'>
-              <p>2 Beer & Down-downs</p>
-              <p>A "down-down" is a time-honored hash ritual—part celebration, part punishment, and all in good fun. It is how hashers recognize notable deeds, outrageous antics, or simply the whims of the group. The chosen one must chug their drink without pause—or risk anointing themselves with the remains! Honors may go to visitors, newcomers, or those who have served the pack well. But beware—infractions, real or hilariously fabricated, also earn a down-down. Offenses range from skipping the beer check, pointing with a finger, or uttering a forbidden sound, to the ultimate sin—wearing new shoes, which may just become your drinking vessel! </p>
+              <h3>2 Beer & Down-downs</h3>
+              <div>A "down-down" is a time-honored hash ritual—part celebration, part punishment, and all in good fun. It is how hashers recognize notable deeds, outrageous antics, or simply the whims of the group. The chosen one must chug their drink without pause—or risk anointing themselves with the remains! Honors may go to visitors, newcomers, or those who have served the pack well. But beware—infractions, real or hilariously fabricated, also earn a down-down. Offenses range from skipping the beer check, pointing with a finger, or uttering a forbidden sound, to the ultimate sin—wearing new shoes, which may just become your drinking vessel! </div>
             </div>
 
              {/* 3 */}
             <div className='text-base'>
-              <p>3 Hash Gear</p>
-              <p>Hashers often sport unique attire on the trail and at the closing circle, blending tradition with personality. Thick, knee-high “Shiggy” socks shield shins from thorns, mud, and mayhem, while kilts—woven with the Hash’s own tartan—add a bold touch of heritage. Some kennels reward hashers with earned gear like bibs or sashes, marking milestones and misadventures. Meanwhile, the happi coat, a vibrant Japanese-inspired jacket, is customized to reflect each kennel’s spirit. Whether clad in shiggy-proof armor or rocking a well-earned bib, hashers wear their chaos with pride!</p>
+              <h3>3 Hash Gear</h3>
+              <div>Hashers often sport unique attire on the trail and at the closing circle, blending tradition with personality. Thick, knee-high “Shiggy” socks shield shins from thorns, mud, and mayhem, while kilts—woven with the Hash’s own tartan—add a bold touch of heritage. Some kennels reward hashers with earned gear like bibs or sashes, marking milestones and misadventures. Meanwhile, the happi coat, a vibrant Japanese-inspired jacket, is customized to reflect each kennel’s spirit. Whether clad in shiggy-proof armor or rocking a well-earned bib, hashers wear their chaos with pride!</div>
             </div>
 
             {/* 4 */}
             <div className='text-base'>
-              <p>4 Hash Hymn</p>
-              <p>“Swing Low, Sweet Chariot” is the sacred anthem of the Hash—a song every hasher knows and (mostly) respects. Though playful variations exist, its place in Hashing tradition remains untouched across the globe. The hymn unites hashers in raucous harmony, echoing through trails and circles alike. While its exact origins are debated—some tracing it to Singapore H3, others to Mother H3—its legacy is undeniable. No matter the kennel or country, when the hymn begins, hashers raise their voices (and their drinks) in tribute to the wild, untamed spirit of the Hash!</p>
+              <h3>4 Hash Hymn</h3>
+              <div>“Swing Low, Sweet Chariot” is the sacred anthem of the Hash—a song every hasher knows and (mostly) respects. Though playful variations exist, its place in Hashing tradition remains untouched across the globe. The hymn unites hashers in raucous harmony, echoing through trails and circles alike. While its exact origins are debated—some tracing it to Singapore H3, others to Mother H3—its legacy is undeniable. No matter the kennel or country, when the hymn begins, hashers raise their voices (and their drinks) in tribute to the wild, untamed spirit of the Hash!</div>
             </div>
 
             {/* 5 */}
             <div className='text-base'>
-              <p>5 Symbols & Logos</p>
-              <p>Many Hash kennels take pride in their unique logos, often designing special emblems for major events like Nash Hash. Despite the individuality of each kennel, certain universal symbols remain iconic across the Hashing world. One of the most recognizable is the human foot outline (or a pair), often accompanied by the classic phrase “On-On.”
+              <h3>5 Symbols & Logos</h3>
+              <div>Many Hash kennels take pride in their unique logos, often designing special emblems for major events like Nash Hash. Despite the individuality of each kennel, certain universal symbols remain iconic across the Hashing world. One of the most recognizable is the human foot outline (or a pair), often accompanied by the classic phrase “On-On.”
 
-              Among the most prized Hash memorabilia are T-shirts, considered by many as collectors items. These shirts commemorate unique Hashes and special events, often featuring kennel logos, dates, hares, locations, sponsors, and more. For Hashers, each T-shirt tells a story—of trails conquered, beers downed, and camaraderie shared</p>
+              Among the most prized Hash memorabilia are T-shirts, considered by many as collectors items. These shirts commemorate unique Hashes and special events, often featuring kennel logos, dates, hares, locations, sponsors, and more. For Hashers, each T-shirt tells a story—of trails conquered, beers downed, and camaraderie shared</div>
             </div>
 
             {/* 6 */}
             <div className='text-base'>
-              <p>6 Hash Names</p>
-              <p>In most Hash chapters, using real names during an event is highly discouraged. Instead, members earn a “Hash name”—a nickname inspired by their most outrageous escapade, distinctive personality trait, or physical quirk. Some kennels require Hashers to earn their name by doing something truly noteworthy, ridiculous, or infamous. Others follow a structured approach, bestowing names after a certain number of runs (usually 5–10) or after setting their first trail (known as a Virgin Hare).
+              <h3>6 Hash Names</h3>
+              <div>In most Hash chapters, using real names during an event is highly discouraged. Instead, members earn a “Hash name”—a nickname inspired by their most outrageous escapade, distinctive personality trait, or physical quirk. Some kennels require Hashers to earn their name by doing something truly noteworthy, ridiculous, or infamous. Others follow a structured approach, bestowing names after a certain number of runs (usually 5 to 10) or after setting their first trail (known as a Virgin Hare).
 
-              <p className='py-4'>Naming customs vary wildly between kennels. Some stick to family-friendly monikers like "Lost My Way," while others revel in playful innuendo ("Purple Vein") or push the limits with bawdy, irreverent, or politically incorrect names. Regardless of how wild the name, once given, it sticks—Hashers will call you by it no matter where you go. In more reserved circles, particularly family-oriented Hashes, some names may be censored humorously to fit the tone, but they are rarely changed.</p>
+              <div className='py-4'>Naming customs vary wildly between kennels. Some stick to family-friendly monikers like "Lost My Way," while others revel in playful innuendo ("Purple Vein") or push the limits with bawdy, irreverent, or politically incorrect names. Regardless of how wild the name, once given, it sticks—Hashers will call you by it no matter where you go. In more reserved circles, particularly family-oriented Hashes, some names may be censored humorously to fit the tone, but they are rarely changed.</div>
 
-              Until officially named, newcomers are often referred to as “Just (Name),” “Nameless (Name)” (e.g., “Nameless John”), or simply “Virgin.”</p>
+              Until officially named, newcomers are often referred to as “Just (Name),” “Nameless (Name)” (e.g., “Nameless John”), or simply “Virgin.”</div>
             </div>
           </div>
 
