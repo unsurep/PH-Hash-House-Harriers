@@ -36,7 +36,7 @@ const Hero = () => {
     const timeout = setTimeout(() => {
       setBackground('/image/bg-sec1.avif');
       setWrite('Now the second background and the new / second text would appear how u want it ')
-    }, 9000);
+    }, 6000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -394,7 +394,7 @@ const Hero = () => {
         <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
-          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs</h1>
+          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs from 4 years ago...</h1>
 
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
           
@@ -428,7 +428,7 @@ const Hero = () => {
             </div>
 
             {/* Unsure */}
-            <div data-aos="fade-up" data-aos-duration="2000">
+            <div data-aos="fade-up" data-aos-duration="1000">
               {/* up div */}
               <div className="text-center items-center flex justify-center hvr-float-shadow">
                 <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740824191/ap2_mjuzip.jpg' width={300} height={300} alt="image" className="ring ring-red-500 rounded-lg"/>
@@ -457,7 +457,7 @@ const Hero = () => {
             </div>
 
             {/* Bigger Twerk */}
-            <div data-aos="fade-up" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="1000">
               {/* up div */}
               <div className="text-center items-center flex justify-center hvr-float-shadow">
                 <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740824708/ap3_w8jziq.jpg' width={300} height={300} alt="image" className="ring ring-red-500 rounded-lg"/>
@@ -625,7 +625,7 @@ const Hero = () => {
               <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -658,9 +658,9 @@ const Hero = () => {
 
                 {/* 2 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -693,9 +693,9 @@ const Hero = () => {
 
                 {/* 3 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -728,9 +728,9 @@ const Hero = () => {
 
               {/* 4 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -763,9 +763,9 @@ const Hero = () => {
 
               {/* 5 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -798,9 +798,9 @@ const Hero = () => {
 
               {/* 6 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -833,9 +833,9 @@ const Hero = () => {
 
               {/* 7 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -868,9 +868,9 @@ const Hero = () => {
 
               {/* 8 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -903,9 +903,9 @@ const Hero = () => {
 
               {/* 9 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -938,9 +938,9 @@ const Hero = () => {
 
               {/* 10 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -973,9 +973,9 @@ const Hero = () => {
 
               {/* 11 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
@@ -1008,9 +1008,9 @@ const Hero = () => {
 
               {/* 12 */}
               <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-gray-300 rounded">
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
-                    <Image src='/image/a1.webp' width={100} height={100} className="rounded" alt='image'/>
+                    <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
                   </div>
 
                   <ul className="flex items-center justify-center gap-2 py-4">
