@@ -48,9 +48,9 @@ const Navbar=()=>{
                         <li className="hvr-underline-from-center cursor-pointer">Misma</li>
                     </Link>
 
-                    <Link href={'/nwts'}>
+                    <>
                         <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
-                    </Link>
+                    </>
 
                     {/* <Link href={'/register'}>
                         <li className="cursor-pointer"><FaRegCircleUser className="text-2xl"/></li>
@@ -98,9 +98,9 @@ const Navbar=()=>{
                                 <li>Misma</li>
                             </Link>
 
-                           <Link href={'/nwts'}>
+                           <>
                                 <li>#NWTS</li>
-                           </Link>
+                           </>
 
                             {/* <Link href={'/register'}>
                                 <li>Register</li>

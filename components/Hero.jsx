@@ -64,7 +64,7 @@ const Hero = () => {
   return (
     <div className={`${arvoFont.variable}`}>
       {/* SECTION 1 */}
-        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat' style={{ backgroundImage: `url(${background})` }}>
+        <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat overflow-hidden' style={{ backgroundImage: `url(${background})` }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
@@ -115,7 +115,7 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         
-          id="section2" className="h-[20rem] font-arvo py-[3rem] px-[3rem] bg-red-50 ">
+          id="section2" className="h-[20rem] font-arvo py-[3rem] overflow-hidden px-[3rem] bg-red-50 ">
           <div className="space-y-5">
             <h3 className="text-sm md:text-lg">A community of Runners and Beer lovers</h3>
             <h3 className="text-sm md:text-3xl tracking-[5px]">Hash House Harriers</h3>
@@ -128,7 +128,7 @@ const Hero = () => {
         </section>
 
         {/* SECTION 3 */}
-        <section id="section3" className="px-[3rem] font-arvo bg-gray-300/20 py-16 relative">
+        <section id="section3" className="px-[3rem] overflow-hidden font-arvo bg-gray-300/20 py-16 relative">
           <div  data-aos="fade-up" data-aos-duration="1000">
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740592027/pic1_mss4ds.jpg' width={700} height={500} alt="image" className="rounded-xl"/>
           </div>
@@ -151,7 +151,7 @@ const Hero = () => {
         </section>
 
         {/* Section 4 Swiper Js */}
-        <div data-aos="fade-up" data-aos-duration="1000" id="section4" className="md:px-[3rem] font-arvo px-[1rem] bg-gray-300/20 pb-[2rem]">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section4" className="md:px-[3rem] overflow-hidden font-arvo px-[1rem] bg-gray-300/20 pb-[2rem]">
         
           <Swiper
             slidesPerView={1}
@@ -268,7 +268,7 @@ const Hero = () => {
           
           
         {/* Section 5 SOFT BABY */}
-        <div data-aos="fade-up" data-aos-duration="1000" id="section5" className="bg-black text-gray-200/50 h-[40%] lg:flex  pb-12 relative font-arvo">
+        <div data-aos="fade-up" data-aos-duration="1000" id="section5" className="bg-black overflow-hidden text-gray-200/50 h-[40%] lg:flex  pb-12 relative font-arvo">
           <div>
             <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740602752/DSC_5481_zen0c1.jpg' width={700} height={100} alt="image"/>
           </div>
@@ -323,7 +323,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 6  */}
-        <div data-aos="fade-up" data-aos-duration="1000" id='section6' className=' font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
+        <div data-aos="fade-up" data-aos-duration="1000" id='section6' className=' overflow-hidden font-arvo bg-cover bg-center bg-no-repeat h-screen' style={{ backgroundImage: "url('/image/lucas1.jpg')" }}>
           <div className="pt-">
             <div className="bg-black/40 pt-20 md:px-[3rem]  ">
               <Image src='/image/save.png' width={300} height={300} alt="image" className=" "/>
@@ -391,7 +391,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 7 LEADERS DASHBOARD */}
-        <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col  items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
+        <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col overflow-hidden items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
           <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs from 4 years ago...</h1>
@@ -488,7 +488,7 @@ const Hero = () => {
         </div>
 
         {/* SECTION 8 UP COMING EVENTS */}
-        <div data-aos="fade-up" data-aos-duration="1000" id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem]">
+        <div data-aos="fade-up" data-aos-duration="1000" id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem] overflow-hidden">
           <div className="py-16">
             <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
           </div>
@@ -600,8 +600,8 @@ const Hero = () => {
         </div>
 
         {/* SECTION 9 MARKET */}
-        <div data-aos="fade-up" data-aos-duration="1000" id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo">
-          <h1 className="text-center text-2xl font-bold tracking-[5px] underline">MEET OUR APPROVED VENDORS</h1>
+        <div data-aos="fade-up" data-aos-duration="1000" id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo overflow-hidden">
+          <h1 className="text-center text-2xl font-bold tracking-[5px] underline">PH-H3 HABERDASH</h1>
           
           {/* market swiper */}
           <div className='py-12'>
@@ -613,13 +613,13 @@ const Hero = () => {
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
               }}
-              autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-              }}
+              // autoplay={{
+              // delay: 5000,
+              // disableOnInteraction: false,
+              // }}
               pagination={{clickable: true,}}
               navigation={true}
-              modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
+              modules={[Autoplay, Navigation]} className="mySwiper">
 
               {/* 1 */}
               <SwiperSlide>
@@ -1046,8 +1046,8 @@ const Hero = () => {
         </div>
         
         {/* Contact Us */}
-        <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50/90  ">
-          <h1 className="text-center font-arvo text-3xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
+        <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50/90  overflow-hidden">
+          <h1 className="text-center font-arvo text-2xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
 
           <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
             {/* div A */}
