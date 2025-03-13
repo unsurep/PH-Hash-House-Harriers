@@ -6,6 +6,7 @@ import { MdLocationOn } from "react-icons/md";
 import { IoTimeSharp } from "react-icons/io5";
 import { SocialIcon } from 'react-social-icons';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const deliusFont= Delius ({
@@ -17,7 +18,7 @@ const deliusFont= Delius ({
 const Footer = () => {
   return (
     <div className={`${deliusFont.variable}`}>
-        <footer className='px-[1rem] py-[3rem] text-sm  font-delius md:px-[3rem] bg-black text-gray-200 flex flex-col md:grid md:grid-cols-3 '>
+        <footer className='px-[1rem] py-[3rem]  text-sm  font-delius md:px-[3rem] bg-black text-gray-200 flex flex-col md:grid md:grid-cols-3 '>
             <div className='flex flex-col scale-in-ver-bottom'>
                 <h3 className='text-3xl hvr-underline-from-center cursor-pointer w-fit'>Contact</h3>
                 <ul className='pt-2 flex flex-col gap-4'>
@@ -93,6 +94,15 @@ const Footer = () => {
                 </ul>
             </div>
         </footer>
+
+         {/* my brand */}
+            <div className="flex justify-center items-center py-3 gap-3 ">
+                <h1 className="text-[10px] ">© 2025 Port Harcourt Hash House Harriers. All Rights Reserved
+                || Developer: One-SurePlayer </h1>
+                <p>
+                    <Image src="/image/me.jpg" width={30} height={30} alt="svg_logo" className=" animate-bounce ring ring-green-400 rounded-full" />
+                </p>
+            </div>
     </div>
   )
 }
