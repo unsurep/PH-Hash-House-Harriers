@@ -13,7 +13,7 @@ const Page = () => {
       </div>
 
       <Link href='#top'>
-        <div className="w-[5px] rounded-full px-6 py-4 bg-[#3177A3] items-center justify-center ring-8 hover:ring-red-300   flex fixed left-10 bottom-5"><span className="font-bold "><FaArrowUp /></span></div>
+        <div className="w-[5px] rounded-full px-6 py-4 bg-[#3177A3] items-center justify-center ring-8 hover:ring-red-300   flex fixed left-5 bottom-5"><span className="font-bold "><FaArrowUp /></span></div>
       </Link>
     </div>
   )

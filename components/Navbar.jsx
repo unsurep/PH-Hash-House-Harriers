@@ -86,11 +86,24 @@ const Navbar=()=>{
 
                     {
                         show===true ? 
-                        <ul className="absolute scale-in-center top-[5rem] flex flex-col gap-12 right-2 bg-white p-12 font-delius text-base w-full text-center">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Photo-Blast</li>
-                            <li>Misma</li>
+                        <ul className="absolute scale-in-center top-[5rem] flex flex-col gap-12 right-2 bg-gray-100 p-12 font-delius text-base w-full text-center">
+
+                            <Link href='/'>
+                                <li>Home</li>
+                            </Link>
+
+                            <Link href='/about'>
+                                <li>About</li>
+                            </Link>
+
+                            <Link href='/photo-blast'>
+                                <li>Photo-Blast</li>
+                            </Link>
+
+                            <Link href='/misma'>
+                                <li>Misma</li>
+                            </Link>
+
                             {/* <li>#NWTS</li> */}
 
                             
