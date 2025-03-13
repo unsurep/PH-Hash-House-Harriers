@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Delius } from "next/font/google";
 import { IoMdMenu } from "react-icons/io";
 import { FaRegCircleUser } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
 
 const deliusFont = Delius({
     subsets: ['latin'],
@@ -14,7 +15,16 @@ const deliusFont = Delius({
 });
 
 
+
+
 const Navbar=()=>{
+
+
+    const [show, setShow]= useState(false);
+
+    const handleShowMenue=()=>{
+        setShow((prev) => !prev)
+    }
 
     return (
         <div className={`${deliusFont.variable}`}>
@@ -61,7 +71,7 @@ const Navbar=()=>{
             </nav>
 
             {/* mobile view */}
-            <nav className="flex lg:hidden items-center justify-between px-[1rem] py-2 bg-opacity-45 backdrop-blur-xl">
+            <nav className="flex lg:hidden items-center justify-between px-[1rem] py-2 bg-opacity-45 backdrop-blur-xl relative z-50">
                 <Link href={'/'}>
                     <div className="flex items-center gap-1">
                         <Image src='/image/logo.png' width={50} height={50} alt="logo"/>
@@ -71,16 +81,47 @@ const Navbar=()=>{
                     </div>
                 </Link>
 
-               <div className="">
+
+                <div onClick={handleShowMenue} className="flex items-center text-black text-3xl "> <IoMdMenu/>
+
+                    {
+                        show===true ? 
+                        <ul className="absolute scale-in-center top-[5rem] flex flex-col gap-12 right-2 bg-white p-12 font-delius text-base w-full text-center">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Photo-Blast</li>
+                            <li>Misma</li>
+                            {/* <li>#NWTS</li> */}
+
+                            
+                        </ul> :
+                        
+                        <div></div>
+                    }
+
+
+                    
+                    
+                </div>
+
+
+
+
+
+
+
+
+               {/* <div className="">
                <div className="drawer drawer-end">
                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content">
-                        {/* Page content here */}
+                       
                         <label htmlFor="my-drawer-4" className="drawer-button bt btn-primary"><IoMdMenu className="text-black text-3xl"/></label>
                     </div>
-                    <div className="drawer-side z-100 ">
+                    
+                    <div className="drawer-side z-50">
                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                        <ul className="menu bg-base-200 text-base-content text-center min-h-full w-56 px-4 space-y-5 pt-5 font-delius relative z-50">
+                        <ul className="menu bg-white text-base-content text-center min-h-full w-56 px-4 space-y-5 pt-5 font-delius relative z-50">
 
                             <Link href={'/'}>
                                 <li>Home</li>
@@ -102,14 +143,12 @@ const Navbar=()=>{
                                 <li>#NWTS</li>
                            </>
 
-                            {/* <Link href={'/register'}>
-                                <li>Register</li>
-                            </Link> */}
+                           
       
                         </ul>
                     </div>
                 </div>
-               </div>
+               </div>  */}
 
             </nav>
 
