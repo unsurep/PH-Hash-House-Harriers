@@ -1,6 +1,8 @@
 import React from 'react'
 import { Arvo } from "next/font/google";
-import Image from 'next/image';
+
+
+
 
 
 const arvoFont= Arvo ({
@@ -14,6 +16,8 @@ const arvoFont= Arvo ({
 
 
 const Misma = () => {
+
+
   return (
     <div className={`${arvoFont.variable}`}>
       <section className='pt-28 bg-gray-100 font-arvo px-[1rem] md:px-[3rem]'>

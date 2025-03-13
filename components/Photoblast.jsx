@@ -1,6 +1,12 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import Image from 'next/image';
 import { Arvo } from "next/font/google";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 
 // these links are all pictures from cloudinary
 const phPic = [
@@ -113,6 +119,19 @@ const arvoFont= Arvo ({
 
 
 const Photoblast = () => {
+
+  useEffect(() => {
+      AOS.init({
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        duration: 400,
+        easing: 'ease',
+        once: false,
+        anchorPlacement: 'top-bottom',
+      });
+    }, []);
+
+
   return (
     <div className={`${arvoFont.variable}`}>
     <div className='lg:pt-28 bg-black text-white/90 px-[1rem] md:px-[3rem] font-arvo'>
@@ -148,7 +167,8 @@ const Photoblast = () => {
       {/* other images from cloudinary */}
       <div className='grid grid-cols-1 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 gap-5 py-8'>
         {phPic.map((url, index)=>(
-          <div key={index} className='overflow-hidden rounded-lg'>
+          <div key={index} data-aos="zoom-in"
+           className='overflow-hidden rounded-lg '>
             <Image src={url} alt={`Image ${index + 1}`}
             width={700} height={700}
             className='w-full h-auto object-cover transition duration-300 hover:brightness-75'

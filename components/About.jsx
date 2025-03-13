@@ -1,6 +1,14 @@
-import React from 'react'
+'use client';
+
+import React, { useEffect } from 'react'
 import { Arvo } from "next/font/google";
 import Image from 'next/image';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+
+
 
 const arvoFont= Arvo ({
     subsets: ["latin"],
@@ -11,6 +19,22 @@ const arvoFont= Arvo ({
 
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      duration: 400,
+      easing: 'ease',
+      once: false,
+      anchorPlacement: 'top-bottom',
+    });
+  }, []);
+
+
+
+
+
   return (
     <div className={`${arvoFont.variable}`} >
         <section className='pt-24 h-[60vh] bg-cover font-arvo flex items-center justify-center bg-center bg-no-repeat' style={{ backgroundImage: "url('/image/about1.jpg')"}}>
@@ -18,8 +42,9 @@ const About = () => {
         </section>
 
         {/* about1 */}
-        <article id='about1' className='bg-gray-50 px-[1rem] md:px-[3rem] font-arvo flex flex-col gap-5 py-12 text-base'>
-          <div className=' '>
+        <article data-aos="fade-up"
+          data-aos-duration="1000" id='about1' className='bg-gray-50 px-[1rem] md:px-[3rem] font-arvo flex flex-col gap-5 py-6 text-base'>
+          <div>
             Port Hash House Harriers, commonly referred to as PH H<sup>3</sup> or PH-HHH, is one of the many chapters—or "Kennels," as they are called in Hash parlance—across Nigeria. The group held its first run in the 1980s.
           </div>
 
@@ -38,11 +63,13 @@ const About = () => {
           
           {/* Follow the hare and not the Pussy */}
           <div className='grid grid-cols-1 lg:flex mx-12 bg-white rounded shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]'>
-            <div>
+            <div data-aos="fade-right"
+              data-aos-duration="1000">
               <Image src='/image/livet.png' width={500} height={500} alt='image of trail' className='rounded'/>
             </div>
 
-            <div className=' flex flex-col mx-auto gap-5 justify-center relative'>
+            <div data-aos="zoom-in-up"
+              data-aos-duration="1000" className=' flex flex-col mx-auto gap-5 justify-center relative '>
               <h1 className='text-center text-xl lg:text-4xl font-semibold tracking-[5px]'>Follow the Hare…</h1>
 
               <div className='tracking-wide text-sm md:text-base px-2'>The hares mark their trail with paper, chalk, sawdust,  strings, <br /> or colored flour, depending on the environment and weather.</div>
@@ -60,7 +87,8 @@ const About = () => {
 
           {/* Red Dress Run */}
           <div className='grid grid-cols-1 lg:flex mx-12 bg-white rounded shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] mt-16 px-[1rem] md:px-[3rem]'>
-            <div >
+            <div data-aos="zoom-in"
+              data-aos-duration="1000">
               <h1 className='py-8 tracking-[5px] text-xl lg:text-4xl font-semibold'>Red Dress</h1>
               <div>
                 <div className='tracking-wide text-sm md:text-base '>An event held annually by some chapters is the “Red Dress Run”. <br /> In 1987, Donna Rhinehart was taken to a hash in Long Beach, <br /> California, to be introduced to the sport. She was invited to <br /> “wait in the truck” until her host returned. Instead Rhinehart <br /> joined the hash in her red dress. The following year, the <br /> San Diego Hash House Harriers sent Rhinehart an airline <br /> ticket to attend the inaugural “Red Dress Run”. Hundreds <br /> of hashers wore red dresses for the event which was widely <br /> covered by local media.</div>
@@ -82,7 +110,8 @@ const About = () => {
               <Image src='/image/bob24.png' width={500} height={500} alt='image of trail' className='rounded'/>
             </div>
 
-            <div className=' flex flex-col mx-auto gap-5 justify-center relative'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className=' flex flex-col mx-auto gap-5 justify-center relative '>
               <h1 className='text-center text-xl lg:text-4xl font-semibold tracking-[5px]'>Special Events...</h1>
 
               <div className='tracking-wide text-sm md:text-base px-2'>The Bob Marley Run is PHH3's special event, celebrating <br /> reggae legend  Bob Marley with a themed hash run and <br /> lively festivities.</div>
@@ -103,31 +132,36 @@ const About = () => {
           {/* Traditions of the hash  */}
           <div className=' md:grid grid-cols-3 gap-6 '>
             {/* 1 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>1 Circle</h3>
               <div>Most hash events conclude with a lively gathering known as the "circle"—or, less commonly, "religion." Led by chapter leaders, this tradition fosters camaraderie through socializing, spirited drinking songs, and lighthearted recognition of members. It is a time to formally name hashers, share important announcements, and celebrate the mischief of the trail. The Grandmaster (GM), Religious Advisor (RA), or a dedicated committee may steer the circle, but spontaneous participation is always encouraged. Expect laughter, camaraderie, and plenty of beer-fueled storytelling!</div>
             </div>
 
             {/* 2 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>2 Beer & Down-downs</h3>
               <div>A "down-down" is a time-honored hash ritual—part celebration, part punishment, and all in good fun. It is how hashers recognize notable deeds, outrageous antics, or simply the whims of the group. The chosen one must chug their drink without pause—or risk anointing themselves with the remains! Honors may go to visitors, newcomers, or those who have served the pack well. But beware—infractions, real or hilariously fabricated, also earn a down-down. Offenses range from skipping the beer check, pointing with a finger, or uttering a forbidden sound, to the ultimate sin—wearing new shoes, which may just become your drinking vessel! </div>
             </div>
 
              {/* 3 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>3 Hash Gear</h3>
               <div>Hashers often sport unique attire on the trail and at the closing circle, blending tradition with personality. Thick, knee-high “Shiggy” socks shield shins from thorns, mud, and mayhem, while kilts—woven with the Hash’s own tartan—add a bold touch of heritage. Some kennels reward hashers with earned gear like bibs or sashes, marking milestones and misadventures. Meanwhile, the happi coat, a vibrant Japanese-inspired jacket, is customized to reflect each kennel’s spirit. Whether clad in shiggy-proof armor or rocking a well-earned bib, hashers wear their chaos with pride!</div>
             </div>
 
             {/* 4 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>4 Hash Hymn</h3>
               <div>“Swing Low, Sweet Chariot” is the sacred anthem of the Hash—a song every hasher knows and (mostly) respects. Though playful variations exist, its place in Hashing tradition remains untouched across the globe. The hymn unites hashers in raucous harmony, echoing through trails and circles alike. While its exact origins are debated—some tracing it to Singapore H3, others to Mother H3—its legacy is undeniable. No matter the kennel or country, when the hymn begins, hashers raise their voices (and their drinks) in tribute to the wild, untamed spirit of the Hash!</div>
             </div>
 
             {/* 5 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>5 Symbols & Logos</h3>
               <div>Many Hash kennels take pride in their unique logos, often designing special emblems for major events like Nash Hash. Despite the individuality of each kennel, certain universal symbols remain iconic across the Hashing world. One of the most recognizable is the human foot outline (or a pair), often accompanied by the classic phrase “On-On.”
 
@@ -135,7 +169,8 @@ const About = () => {
             </div>
 
             {/* 6 */}
-            <div className='text-base'>
+            <div data-aos="zoom-in"
+              data-aos-duration="1000" className='text-base'>
               <h3>6 Hash Names</h3>
               <div>In most Hash chapters, using real names during an event is highly discouraged. Instead, members earn a “Hash name”—a nickname inspired by their most outrageous escapade, distinctive personality trait, or physical quirk. Some kennels require Hashers to earn their name by doing something truly noteworthy, ridiculous, or infamous. Others follow a structured approach, bestowing names after a certain number of runs (usually 5 to 10) or after setting their first trail (known as a Virgin Hare).
 
