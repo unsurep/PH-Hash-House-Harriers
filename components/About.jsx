@@ -69,14 +69,15 @@ const About = () => {
             </div>
 
             <div data-aos="zoom-in-up"
-              data-aos-duration="1000" className=' flex flex-col mx-auto gap-5 justify-center relative '>
+              data-aos-duration="1000" className='py-3 flex flex-col mx-auto gap-5 justify-center relative '>
               <h1 className='text-center text-xl lg:text-4xl font-semibold tracking-[5px]'>Follow the Hare…</h1>
 
               <div className='tracking-wide text-sm md:text-base px-2'>The hares mark their trail with paper, chalk, sawdust,  strings, <br /> or colored flour, depending on the environment and weather.</div>
 
               <div className='tracking-wide text-sm md:text-base px-2'>Special marks may be used to indicate a false trail, a backtrack, <br /> a shortcut, or a turn. The most commonly used mark is a “check”, <br /> indicating that hashers will have to search in any direction to find <br /> the continuation of the trail. Trails may contain a “beer check”, <br /> where the pack stops to consume beer, water, or snacks, allowing <br /> any stragglers to catch up to the group.</div>
 
-              <div className='absolute bottom-0 right-0'>
+              <div data-aos="fade-up-left"
+                data-aos-duration="1000" className='absolute bottom-0 right-0'>
                 <Image src='/image/w-can.png' width={70} height={70} alt='image' />
               </div>
 
@@ -98,15 +99,17 @@ const About = () => {
             </div>
 
             {/* videos */}
-            <div className='ml-auto flex items-center'>
+            <div  data-aos="fade-left"
+               className='ml-auto flex items-center pb-3'>
               <video src="/video/vid1.mp4" typeof='mp4' width="400" controls className='rounded ring ring-red-200'></video>
             </div>
           </div>
 
 
           {/* Special Events */}
-          <div className='grid grid-cols-1 lg:flex mx-12 bg-white rounded shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] my-16'>
-            <div>
+          <div className='grid grid-cols-1 lg:flex mx-12 bg-white rounded shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] my-16 py-3'>
+            <div data-aos="fade-right"
+              data-aos-duration="1000">
               <Image src='/image/bob24.png' width={500} height={500} alt='image of trail' className='rounded'/>
             </div>
 
@@ -118,7 +121,8 @@ const About = () => {
 
               <div className='tracking-wide text-sm md:text-base px-2'>Join PH H<sup>3</sup> legendary Bob Marley Run—a vibrant, <br /> reggae-infused adventure through epic trails, tricky <br /> checks, and ice-cold beer stops! Feel the rhythm, <br /> blaze the trails, and sip freely as we run, chant, and <br /> celebrate unity. One love, one trail, endless vibes!</div>
 
-              <div className='absolute bottom-0 right-0'>
+              <div className='absolute bottom-0 right-0 data-aos="fade-up-left"
+                data-aos-duration="1000"'>
                 <Image src='/image/w-can.png' width={70} height={70} alt='image' />
               </div>
             </div>
