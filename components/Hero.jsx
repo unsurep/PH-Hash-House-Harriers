@@ -36,7 +36,7 @@ const Hero = () => {
     const timeout = setTimeout(() => {
       setBackground('/image/bg-sec1.avif');
       setWrite('Now the second background and the new / second text would appear how u want it ')
-    }, 6000);
+    }, 8000);
 
     return () => clearTimeout(timeout);
   }, []);
