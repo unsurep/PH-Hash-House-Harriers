@@ -104,14 +104,19 @@ const phPic = [
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015638/IMG-20250315-WA0024_gh0bos.jpg',
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015639/IMG-20250315-WA0025_xif0wz.jpg',
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015647/IMG-20250315-WA0030_vgxev2.jpg',
- 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015644/IMG-20250315-WA0028_coe7dr.jpg',
+'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742016198/IMG-20250315-WA0028_aaltic.jpg',
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015645/IMG-20250315-WA0029_e9nnnc.jpg',
  "https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015648/IMG-20250315-WA0031_njxlzm.jpg",
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015650/IMG-20250315-WA0032_cd6euv.jpg',
  "https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015651/IMG-20250315-WA0033_tp4lgj.jpg",
-
+'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036214/DSC_5180_wumvc8.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036225/DSC_4918_ppdvwu.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036226/DSC_4937_gvvxwh.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036227/DSC_4924_ssoddw.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036228/DSC_4962_mtmjch.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036771/WhatsApp_Image_2025-03-15_at_11.10.27_2e1170d5_swovmt.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742036771/WhatsApp_Image_2025-03-15_at_11.10.29_bbc622d1_qew3pk.jpg',
  
- 
 
 
 
@@ -125,7 +130,7 @@ const phPic = [
 
 
 
-  // Ended... no new pic for now as at 13/3/2025
+  // Ended... at run 1007
 
 ]
 
