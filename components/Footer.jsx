@@ -31,7 +31,7 @@ const Footer = () => {
                 <div className='flex items-center pt-3 gap-3'>
 
                     <SocialIcon
-                        url="https://www.facebook.com"
+                        url="https://web.facebook.com/groups/420151324828306"
                         target="_blank"
                         fgColor="gray"
                         bgColor="transparent"
@@ -40,7 +40,7 @@ const Footer = () => {
                     />
 
                     <SocialIcon
-                        url="https://www.tiktok.com/@onesureplayer?_t=ZM-8tSCSG1nYjG&_r=1"
+                        url='https://www.tiktok.com/@unsureplayer?_t=ZM-8ugzO8TOuN4&_r=1'
                         target="_blank"
                         fgColor="gray"
                         bgColor="transparent"
@@ -49,7 +49,7 @@ const Footer = () => {
                     />
 
                     <SocialIcon
-                        url="https://www.youtube.com"
+                        url="https://www.youtube.com/@FabricatedHashChronicles-h1u/videos"
                         target="_blank"
                         fgColor="gray"
                         bgColor="transparent"

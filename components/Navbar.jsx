@@ -59,7 +59,7 @@ const Navbar=()=>{
                     </Link>
 
                     <>
-                        <li className="hvr-underline-from-center cursor-pointer">#NWTS</li>
+                        <li className="">#NWTS</li>
                     </>
 
                     {/* <Link href={'/register'}>

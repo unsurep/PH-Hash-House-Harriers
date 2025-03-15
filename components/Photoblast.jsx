@@ -94,6 +94,26 @@ const phPic = [
   'https://res.cloudinary.com/dvkmv0k18/image/upload/v1741826780/WhatsApp_Image_2025-03-12_at_23.58.36_6d76a031_ny4qlw.jpg',
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1741826825/WhatsApp_Image_2025-03-12_at_23.58.38_cb349f63_s15ips.jpg',
  'https://res.cloudinary.com/dvkmv0k18/image/upload/v1741826833/WhatsApp_Image_2025-03-12_at_23.58.39_4ee8af0e_uccgdb.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742009895/1_hjpkji.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742009901/2_btiv9t.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742009906/3_cwvafo.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742010120/4_pk0lnb.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742010338/5_uy2fv9.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015637/IMG-20250315-WA0012_zehz1b.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015638/IMG-20250315-WA0021_n3qahn.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015638/IMG-20250315-WA0024_gh0bos.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015639/IMG-20250315-WA0025_xif0wz.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015647/IMG-20250315-WA0030_vgxev2.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015644/IMG-20250315-WA0028_coe7dr.jpg',
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015645/IMG-20250315-WA0029_e9nnnc.jpg',
+ "https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015648/IMG-20250315-WA0031_njxlzm.jpg",
+ 'https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015650/IMG-20250315-WA0032_cd6euv.jpg',
+ "https://res.cloudinary.com/dvkmv0k18/image/upload/v1742015651/IMG-20250315-WA0033_tp4lgj.jpg",
+
+ 
+ 
+
+
 
 
 
@@ -135,8 +155,8 @@ const Photoblast = () => {
   return (
     <div className={`${arvoFont.variable}`}>
     <div className='lg:pt-28 bg-black text-white/90 px-[1rem] md:px-[3rem] font-arvo'>
-      <div className='flex items-center justify-center gap-5 py-6'>
-        <h1 className='text-center text-xl md:text-4xl font-bold '>PH H<sup>3</sup> Photo-Blast</h1>
+      <div className='flex items-center justify-center gap-5 py-12'>
+        <h1 className='text-center text-xl md:text-4xl font-bold tracking-[5px]'>PH H<sup>3</sup> PHOTO-BLAST</h1>
         <audio src='/audio/by.mp3' typeof='mp3' controls className='bg-red-200/50 rounded'></audio>
       </div>
       
@@ -144,22 +164,22 @@ const Photoblast = () => {
       <div className='grid grid-cols-1 lg:flex gap-5'>
         {/* 1 */}
         <div>
-          <Image src='/image/photob.png' width={400} height={400} alt='image' className='rounded'/>
+          <Image src='/image/photob.png' width={400} height={400} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
         </div>
 
         {/* 2 */}
         <div className='flex flex-col gap-5 ml-auto'>
           <div className='hidden lg:flex gap-5'>
-            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded'/>
-            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded'/>
-            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded'/>
+            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
           </div>
 
           {/* 3 */}
           <div className='grid grid-cols-1 md:flex gap-5'>
-            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded'/>
-            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded'/>
-            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded'/>
+            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
           </div>
         </div>
       </div>
@@ -171,7 +191,7 @@ const Photoblast = () => {
            className='overflow-hidden rounded-lg '>
             <Image src={url} alt={`Image ${index + 1}`}
             width={700} height={700}
-            className='w-full h-auto object-cover transition duration-300 hover:brightness-75'
+            className='w-full h-auto object-cover transition duration-300 hover:brightness-75 hvr-float-shadow'
             
             />
 

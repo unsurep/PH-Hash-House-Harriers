@@ -78,7 +78,7 @@ const Hero = () => {
             {/* modal */}
             <div className="flex items-center justify-center pt-[1rem] min-h-[30%]">
              
-              <button className="btn bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Run Information:</button>
+              <button className="btn bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Our Weekly Run Information:</button>
               <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-11/12 max-w-5xl font-arvo">
                   <h3 className="font-bold text-lg ">Hashers RU!!!</h3>
@@ -89,13 +89,13 @@ const Hero = () => {
                     </div>
                     <h3 className="font-semibold">Weekly Run Information :</h3>
                     <ul className="space-y-3">
-                      <li>Run No: 1007</li>
-                      <li>Date: Friday 14th March, 2025</li>
-                      {/* <li>Venue:  GRA Phase II, Port Harcourt</li> */}
-                      <li>Hare: PH H3Mismanagement</li>
+                      <li>Run No: 1008</li>
+                      <li>Date: Friday 21<sup>st</sup> March, 2025</li>
+                      <li><b>Venue: Nwayi Enugu  GRA Phase II, Port Harcourt</b></li>
+                      <li>Hare: PH H3 Mismanagement</li>
                       <li>Rego: N1,500</li>
                       <li>Time: 5:00 pm</li>
-                      <li>Rego Account: 1019116023 UBA</li>
+                      <li><b>Rego Account: 1019116023 UBA</b></li>
                       <li className="font-bold flex gap-2 items-center">Send evidencey of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' width={30} height={30} alt="whatsapp logo" /></span></li>
                     </ul>
                   </div>
@@ -162,9 +162,9 @@ const Hero = () => {
             1024: { slidesPerView: 4 },
             }}
             navigation={true}
-            pagination={{
-            clickable: true,
-            }}
+            // pagination={{
+            // clickable: true,
+            // }}
             modules={[Pagination, Navigation]}
             className="mySwiper">
               
@@ -490,7 +490,7 @@ const Hero = () => {
         {/* SECTION 8 UP COMING EVENTS */}
         <div data-aos="fade-up" data-aos-duration="1000" id='section8' className="bg-gray-50 w-full font-arvo px-[1rem] md:px-[3rem] overflow-hidden">
           <div className="py-16">
-            <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
+            <h1 className="tracking-[5px] font-extrabold underline text-center text-2xl  lg:text-4xl">2025 UP COMING HASH EVENTS IN NIGERIA</h1>
           </div>
             
           {/* SWIPER */}
@@ -504,7 +504,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 2500,
+              delay: 4000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -601,7 +601,7 @@ const Hero = () => {
 
         {/* SECTION 9 MARKET */}
         <div data-aos="fade-up" data-aos-duration="1000" id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo overflow-hidden">
-          <h1 className="text-center text-2xl font-bold tracking-[5px] underline">PH-H3 HABERDASH</h1>
+          <h1 className="text-center text-2xl lg:text-4xl font-bold tracking-[5px] underline">PH-H3 HASH GEAR FOR SALE (HABERDASH)</h1>
           
           {/* market swiper */}
           <div className='py-12'>
@@ -1047,14 +1047,14 @@ const Hero = () => {
         
         {/* Contact Us */}
         <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50/90  overflow-hidden">
-          <h1 className="text-center font-arvo text-2xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
+          <h1 className="text-center font-arvo text-2xl lg:text-4xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
 
           <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
             {/* div A */}
             <form data-aos="fade-right" data-aos-duration="1000" className="px-6  formbg opacity-80 py-7 rounded flex flex-col justify-items-center">
               {/* Hash handle */}
               <div className="font-arvo flex flex-col">
-                <label>Hash Handle</label>
+                <label>Name</label>
                 <input type="text"
                 placeholder="Enter hash handle"
                 className="px-4 py-2 outline-none rounded text-gray-500"/>
@@ -1062,7 +1062,7 @@ const Hero = () => {
               
               {/* Name of kennel */}
               <div className="font-arvo flex flex-col py-3">
-                <label>Name of Kennel</label>
+                <label>Kennel</label>
                 <input type="text"
                 placeholder="Enter kennel name"
                 className="px-4 py-2 outline-none rounded text-gray-500"/>
@@ -1072,7 +1072,7 @@ const Hero = () => {
               <div className="font-arvo flex flex-col">
                 <label>Subject Matter</label>
                 <input type="text"
-                placeholder="Enter subject"
+                placeholder="Enter a subject"
                 className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
 
@@ -1080,12 +1080,12 @@ const Hero = () => {
               <div className="font-arvo flex flex-col py-3">
                 <label>Message</label>
                 <textarea type="text"
-                placeholder="Enter Message"
+                placeholder="Enter your Message | Report"
                 className="px-4 py-2 outline-none rounded text-gray-500"/>
               </div>
 
               <div className="flex items-center justify-center py-5">
-                <button type="submit" className="w-full bg-gray-100 hover:bg-gray-300/60 py-2 rounded">Submit</button>
+                <button disabled type="submit" className="w-full bg-gray-100 hover:bg-gray-300/60 py-2 rounded">Submit</button>
               </div>
             </form>
 
