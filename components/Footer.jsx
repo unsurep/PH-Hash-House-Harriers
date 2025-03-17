@@ -96,7 +96,7 @@ const Footer = () => {
         </footer>
 
          {/* my brand */}
-            <div className="flex justify-center items-center py-3 gap-3 ">
+            <div className="flex justify-center items-center py-3 gap-3 px-[1rem] md:px-[3rem]">
                 <h1 className="text-[10px] ">© 2025 Port Harcourt Hash House Harriers. All Rights Reserved
                 || Developer: One-SurePlayer </h1>
                 <p>
