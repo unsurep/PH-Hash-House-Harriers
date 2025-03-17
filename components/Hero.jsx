@@ -504,7 +504,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 4000,
+              delay: 6000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -514,94 +514,94 @@ const Hero = () => {
               {/* 1 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/trilogy.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
                 {/* 2 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/sierra.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/bobc.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
                 {/* 3 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/fgals.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/nashhash.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
               {/* 4 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/akwa.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/akwa1.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
               {/* 5 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/pan.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/wh3.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
               {/* 6 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/bob.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/lh3.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
               {/* 7 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/trilogy.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 8 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/sierra.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 9 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/fgals.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 10 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/akwa.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 11 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/pan.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 12 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/bob.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
-          <h1 className="text-center py-5 text-red-400">Remember, REGO is KEY!</h1>
+          <h1 className="text-center py-5 text-red-400 font-extrabold">Remember, REGO is KEY!</h1>
         </div>
 
         {/* SECTION 9 MARKET */}
         <div data-aos="fade-up" data-aos-duration="1000" id="section9" className="bg-gray-50 w-full pt-8 px-[1rem] md:px-[3rem] font-arvo overflow-hidden">
-          <h1 className="text-center text-2xl lg:text-4xl font-bold tracking-[5px] underline">PH-H3 HASH GEAR FOR SALE (HABERDASH)</h1>
+          <h1 className="text-center text-2xl lg:text-4xl font-bold tracking-[5px] underline"> HABERDASH ( HASH GEAR FOR SALE)</h1>
           
           {/* market swiper */}
           <div className='py-12'>
@@ -621,8 +621,168 @@ const Hero = () => {
               navigation={true}
               modules={[Autoplay, Navigation]} className="mySwiper">
 
+                {/* New swiper */}
+
+                {/* 1 */}
+                <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-gray-100 px-3">
+                    <div>
+                      <Image src='/image/s4.jpg' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N7,000.00</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                {/* 2 */}
+                <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-red-100 px-3">
+                    <div>
+                      <Image src='/image/hashg1.png' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N7,000.00</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                {/* 3 */}
+                <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-yellow-100 px-3">
+                    <div>
+                      <Image src='/image/hashg2.png' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N7,000.00</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                {/* 4 */}
+                <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-orange-100 px-3">
+                    <div>
+                      <Image src='/image/8k.png' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N8,000.00</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                 {/* 5 */}
+                 <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-cyan-100 px-3">
+                    <div>
+                      <Image src='/image/cap.png' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N3,000</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                 {/* 6 */}
+                 <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-purple-100 px-3">
+                    <div>
+                      <Image src='/image/badge.png' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N1,500</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div>
+                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               {/* 1 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
+                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
+                  <div className="bg-gray-100 rounded">
+                    <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
+                  </div>
+
+                  <ul className="flex items-center justify-center gap-2 py-4">
+                    <li>
+                      <Image src='/image/shg1.png' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/shg1.png' width={100} height={100} className="rounded" alt='image'/>
+                    </li>
+
+                    <li>
+                      <Image src='/image/shg1.png' width={100} height={100} className="rounded" alt="image"/>
+                    </li>
+                  </ul>
+
+                  <div className="flex items-center justify-items-center gap-5">
+                    <div className="flex flex-col w-full">
+                      <p className="text-base font-bold font-arvo text-center">N7,000.00</p>
+                      <p className="text-sm font-arvo text-center">Sold by Haberdash</p>
+                    </div>
+
+                    <div className="flex items-center">
+                     
+                      <button className="p-3 bg-gray-100 rounded-lg hover:bg-gray-300 text-sm ">View</button>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide> */}
+
+                {/* 2 */}
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -630,69 +790,34 @@ const Hero = () => {
 
                   <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
-                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                      <Image src='/image/shg3.png' width={100} height={100} className="rounded" alt="image"/>
                     </li>
 
                     <li>
-                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                      <Image src='/image/shg3.png' width={100} height={100} className="rounded" alt='image'/>
                     </li>
 
                     <li>
-                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
-                    </li>
-                  </ul>
-
-                  <div className="flex items-center justify-items-center gap-5">
-                    <div className="flex flex-col w-full">
-                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
-                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
-                    </div>
-
-                    <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-                {/* 2 */}
-              <SwiperSlide>
-                <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
-                  <div className="bg-gray-100 rounded">
-                    <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
-                  </div>
-
-                  <ul className="flex items-center justify-center gap-2 py-4">
-                    <li>
-                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
-                    </li>
-
-                    <li>
-                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
-                    </li>
-
-                    <li>
-                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                      <Image src='/image/shg3.png' width={100} height={100} className="rounded" alt="image"/>
                     </li>
                   </ul>
 
                   <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
-                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
-                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
+                      <p className="text-base font-bold font-arvo text-center">N7,000.00</p>
+                      <p className="text-xs font-arvo text-center">Sold by Haberdash</p>
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
+               
+                      <button className="p-3 bg-gray-100 rounded-lg hover:bg-gray-300 text-sm ">View</button>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
                 {/* 3 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -700,34 +825,34 @@ const Hero = () => {
 
                   <ul className="flex items-center justify-center gap-2 py-4">
                     <li>
-                      <Image src='/image/a2.webp' width={100} height={100} className="rounded" alt="image"/>
+                      <Image src='/image/shg3.jpg' width={100} height={100} className="rounded" alt="image"/>
                     </li>
 
                     <li>
-                      <Image src='/image/a3.webp' width={100} height={100} className="rounded" alt='image'/>
+                      <Image src='/image/shg3.jpg' width={100} height={100} className="rounded" alt='image'/>
                     </li>
 
                     <li>
-                      <Image src='/image/a4.webp' width={100} height={100} className="rounded" alt="image"/>
+                      <Image src='/image/shg3.jpg' width={100} height={100} className="rounded" alt="image"/>
                     </li>
                   </ul>
 
                   <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
-                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
-                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
+                      <p className="text-base font-bold font-arvo text-center">N7,000.00</p>
+                      <p className="text-xs font-arvo text-center">Sold by Haberdash</p>
                     </div>
 
                     <div className="flex items-center">
-                      <p><FaWhatsappSquare className="text-4xl text-green-500 rounded-full"/></p>
+                     
+                      <button className="p-3 bg-gray-100 rounded-lg hover:bg-gray-300 text-sm ">View</button>
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 4 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -751,7 +876,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -759,10 +883,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 5 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -786,7 +910,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -794,10 +917,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 6 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -821,7 +944,6 @@ const Hero = () => {
                     <div className="flex flex-col">
                       <p className="text-base font-bold font-arvo">Men Fashions</p>
                       <p className="text-xs font-arvo">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -829,10 +951,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 7 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -856,7 +978,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -864,10 +985,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 8 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -891,7 +1012,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -899,10 +1019,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 9 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s1.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -926,7 +1046,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvotext-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -934,10 +1053,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 10 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s2.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -961,7 +1080,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -969,10 +1087,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 11 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s3.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -996,7 +1114,6 @@ const Hero = () => {
                     <div className="flex flex-col w-full">
                       <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
                       <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
                     </div>
 
                     <div className="flex items-center">
@@ -1004,10 +1121,10 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 12 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="flex flex-col gap-4 px-2 py-4 bg-gray-50 hover:bg-red-200/30 rounded">
                   <div className="bg-gray-100 rounded">
                     <Image src='/image/s4.jpg' width={100} height={100} className="rounded" alt='image'/>
@@ -1029,9 +1146,8 @@ const Hero = () => {
 
                   <div className="flex items-center justify-center gap-5">
                     <div className="flex flex-col w-full">
-                      <p className="text-base font-bold font-arvo text-center">Men Fashions</p>
-                      <p className="text-xs font-arvo text-center">Sold by of Cooking Cummer PH H<sup>3</sup></p>
-                      {/* <p>Contact</p> */}
+                      <p className="text-base font-bold font-arvo text-center">PH H3 Gear</p>
+                      <p className="text-xs font-arvo text-center">Sold by Haberdash</p>
                     </div>
 
                     <div className="flex items-center">
@@ -1039,7 +1155,7 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
 

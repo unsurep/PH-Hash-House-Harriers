@@ -157,7 +157,7 @@ const About = () => {
 
             {/* 2 */}
             <div data-aos="zoom-in"
-              data-aos-duration="2000" className='text-base flex flex-col gap-3 py-8'>
+              data-aos-duration="2000" className='text-base flex flex-col gap-3 py-8 md:py-4'>
               <h3 className='flex gap-3 items-center'><span className='px-3 py-1 bg-blue-200 rounded-full font-bold'>2 {" "}<b>Beer & Down-downs</b></span></h3>
               {/* <div>Image</div> */}
               <div>A "down-down" is a time-honored hash ritual—part celebration, part punishment, and all in good fun. It is how hashers recognize notable deeds, outrageous antics, or simply the whims of the group. The chosen one must chug their drink without pause—or risk anointing themselves with the remains! Honors may go to visitors, newcomers, or those who have served the pack well. But beware—infractions, real or hilariously fabricated, also earn a down-down. Offenses range from skipping the beer check, pointing with a finger, or uttering a forbidden sound, to the ultimate sin—wearing new shoes, which may just become your drinking vessel! </div>
@@ -173,7 +173,7 @@ const About = () => {
 
             {/* 4 */}
             <div data-aos="zoom-in"
-              data-aos-duration="2000" className='text-base flex flex-col gap-3 py-8'>
+              data-aos-duration="2000" className='text-base flex flex-col gap-3 py-4 md:py-8'>
               <h3 className='flex gap-3 items-center'><span className='px-3 py-1 bg-teal-200 rounded-full font-bold'>4 {" "} <b>Hash Hymn</b></span></h3>
               {/* <div>Image</div> */}
               <div>“Swing Low, Sweet Chariot” is the sacred anthem of the Hash—a song every hasher knows and (mostly) respects. Though playful variations exist, its place in Hashing tradition remains untouched across the globe. The hymn unites hashers in raucous harmony, echoing through trails and circles alike. While its exact origins are debated—some tracing it to Singapore H3, others to Mother H3—its legacy is undeniable. No matter the kennel or country, when the hymn begins, hashers raise their voices (and their drinks) in tribute to the wild, untamed spirit of the Hash!</div>
@@ -191,7 +191,7 @@ const About = () => {
 
             {/* 6 */}
             <div data-aos="zoom-in"
-              data-aos-duration="3000" className='text-base flex flex-col gap-3 py-8'>
+              data-aos-duration="3000" className='text-base flex flex-col gap-3 py-4 md:py-8'>
               <h3 className='flex gap-3 items-center'><span className='px-3 py-1 bg-yellow-200 rounded-full font-bold'>6 {" "} <b>Hash Names</b></span></h3>
               {/* <div>Image</div> */}
               <div>In most Hash chapters, using real names during an event is highly discouraged. Instead, members earn a “Hash name”—a nickname inspired by their most outrageous escapade, distinctive personality trait, or physical quirk. Some kennels require Hashers to earn their name by doing something truly noteworthy, ridiculous, or infamous. Others follow a structured approach, bestowing names after a certain number of runs (usually 5 to 10) or after setting their first trail (known as a Virgin Hare).
