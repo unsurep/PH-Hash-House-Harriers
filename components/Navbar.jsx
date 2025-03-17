@@ -1,12 +1,17 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Delius } from "next/font/google";
 import { IoMdMenu } from "react-icons/io";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { MdOutlineDirectionsRun } from "react-icons/md";
+import { IoBeer } from "react-icons/io5";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const deliusFont = Delius({
     subsets: ['latin'],
@@ -26,6 +31,25 @@ const Navbar=()=>{
         setShow((prev) => !prev)
     }
 
+
+        // AOS
+      useEffect(() => {
+        AOS.init({
+          animatedClassName: 'aos-animate',
+          useClassNames: false,
+          duration: 400,
+          easing: 'ease',
+          once: false,
+          anchorPlacement: 'top-bottom',
+        });
+      }, []);
+
+
+
+
+
+
+
     return (
         <div className={`${deliusFont.variable}`}>
             {/* Desktop view */}
@@ -33,10 +57,8 @@ const Navbar=()=>{
                 <Link href={'/'}>
                     <div className="flex items-center gap-3">
                         <Image src='/image/logo.png' width={60} height={60} alt="logo"/>
-                        <h3>Port Harcourt Hash House Harriers
-                            <span className="block text-xs font-bold">#NWTS 
-                                {/* <audio src="" type="audio/mpeg" className="cursor-pointer bg-orange-400" controls></audio> */}
-                            </span>
+                        <h3 className="">Port Harcourt Hash House Harriers
+                            <span className="flex text-xs font-bold gap-1 items-center"><FaMapMarkerAlt className="text-red-500"/>Port Harcourt on the map... <MdOutlineDirectionsRun /> <IoBeer /> </span>
                         </h3>
                     </div>
                 </Link>
@@ -75,8 +97,8 @@ const Navbar=()=>{
                 <Link href={'/'}>
                     <div className="flex items-center gap-1">
                         <Image src='/image/logo.png' width={50} height={50} alt="logo"/>
-                        <h3 className="text-sm font-delius">Port Harcourt H<sup>3</sup>
-                            <span className="block text-[10px] font-bold font-delius">#NWTS</span>
+                        <h3 className="">Port Harcourt Hash House Harriers
+                            <span className="flex text-xs font-bold gap-1 items-center"><FaMapMarkerAlt className="text-red-500"/>Port Harcourt on the map... <MdOutlineDirectionsRun /> <IoBeer /> </span>
                         </h3>
                     </div>
                 </Link>
@@ -86,7 +108,10 @@ const Navbar=()=>{
 
                     {
                         show===true ? 
-                        <ul className="absolute scale-in-center top-[5rem] flex flex-col gap-12 right-2 bg-gray-100 p-12 font-delius text-base w-full text-center">
+                        <ul  data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-offset="500"
+                        data-aos-duration="500" className="absolute  top-[4rem] flex flex-col gap-12 right-2 bg-gray-100 p-12 font-delius text-base h-screen w-full text-center">
 
                             <Link href='/'>
                                 <li>Home</li>
@@ -104,7 +129,7 @@ const Navbar=()=>{
                                 <li>Misma</li>
                             </Link>
 
-                            {/* <li>#NWTS</li> */}
+                            <li>#NWTS</li>
 
                             
                         </ul> :

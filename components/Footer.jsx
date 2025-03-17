@@ -24,7 +24,7 @@ const Footer = () => {
                 <ul className='pt-2 flex flex-col gap-4'>
                     <li className='flex items-center gap-3'><FaPhone />0803-4567-890</li>
                     <li className='flex items-center gap-3'><MdEmail />ph-hash-house-harriers@gmail.com</li>
-                    <li className='flex items-center gap-3'><MdLocationOn />Somewhere in Port Harcourt</li>
+                    <li className='flex items-center gap-3'><MdLocationOn />Port Harcourt on the map</li>
                     <li className='flex items-center gap-3'><IoTimeSharp /> Fridays by 5:00pm</li>
                 </ul>
 
@@ -89,7 +89,7 @@ const Footer = () => {
                    </Link>
 
                     <Link href={'/nwts'}>
-                        <li className='hvr-underline-from-center cursor-pointer w-fit'>#NWTS</li>
+                        <li>#NWTS</li>
                     </Link>
                 </ul>
             </div>

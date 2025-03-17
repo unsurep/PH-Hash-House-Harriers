@@ -20,7 +20,7 @@ const Misma = () => {
 
   return (
     <div className={`${arvoFont.variable}`}>
-      <section className='py-28 bg-gray-100 font-arvo px-[1rem] md:px-[3rem]'>
+      <section className='py-8 md:py-28 bg-gray-100 font-arvo px-[1rem] md:px-[3rem]'>
 
        <div className='flex flex-col items-center justify-center'>
         <h1 className='text-xl text-center lg:text-4xl font-bold tracking-[5px]'>Our Mismanagement Team...</h1>
