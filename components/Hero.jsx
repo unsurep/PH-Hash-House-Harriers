@@ -635,7 +635,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -652,7 +654,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -669,7 +673,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -686,7 +692,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -703,7 +711,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -720,7 +730,9 @@ const Hero = () => {
                     </ul>
 
                     <div>
-                      <button className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
                     </div>
                   </div>
                 </SwiperSlide>
