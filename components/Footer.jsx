@@ -98,10 +98,13 @@ const Footer = () => {
          {/* my brand */}
             <div className="flex justify-center items-center py-3 gap-3 px-[1rem] md:px-[3rem]">
                 <h1 className="text-[10px] ">© 2025 Port Harcourt Hash House Harriers. All Rights Reserved
-                || Developer: One-SurePlayer </h1>
+                || Developer: One-SurePlayer || wedevilleg@gmail.com </h1>
+
+                
                 <p>
                     <Image src="/image/me.jpg" width={30} height={30} alt="svg_logo" className=" animate-bounce ring ring-green-400 rounded-full" />
                 </p>
+                
             </div>
     </div>
   )
