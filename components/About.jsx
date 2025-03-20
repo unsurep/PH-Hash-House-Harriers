@@ -102,7 +102,7 @@ const About = () => {
           <div className='grid grid-cols-1 lg:flex mx-12 bg-white rounded shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] mt-16 px-[1rem] md:px-[3rem]'>
             <div data-aos="zoom-in"
               data-aos-duration="1000">
-              <h1 className='py-8 tracking-[5px] text-xl lg:text-4xl font-semibold'>Red Dress</h1>
+              <h1 className='py-8 tracking-[5px] text-xl lg:text-4xl font-semibold text-red-500'>Red Dress Run</h1>
               <div>
                 <div className='tracking-wide text-sm md:text-base '>An event held annually by some chapters is the “Red Dress Run”. <br /> In 1987, Donna Rhinehart was taken to a hash in Long Beach, <br /> California, to be introduced to the sport. She was invited to <br /> “wait in the truck” until her host returned. Instead Rhinehart <br /> joined the hash in her red dress. The following year, the <br /> San Diego Hash House Harriers sent Rhinehart an airline <br /> ticket to attend the inaugural “Red Dress Run”. Hundreds <br /> of hashers wore red dresses for the event which was widely <br /> covered by local media.</div>
 
