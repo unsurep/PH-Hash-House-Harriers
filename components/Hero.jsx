@@ -7,6 +7,7 @@ import { Arvo } from "next/font/google";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from 'motion/react'
 import { FaWhatsappSquare } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -66,9 +67,9 @@ const Hero = () => {
       {/* SECTION 1 & Modals */}
         <section id='section1' className='h-screen bg-cover font-arvo  bg-center bg-no-repeat overflow-hidden' style={{ backgroundImage: `url(${background})` }}>
             <div className='bg-red-50 h-[60%] md:h-[70%] text-3xl md:px-[3rem] '>
-              <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold text-center font-arvo tracking-[5px]">Welcome to</h1>
+              <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold flex gap-2 items-center justify-center text-center font-arvo tracking-[5px]"><span><Image src='/image/checkin.svg' width={40} height={40} alt="svg"/></span>Check-inn</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[1rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
-              <p className='text-center text-base md:text-[20px] md:pt-[2rem] pt-[2rem] text-black/90 font-bold font-arvo'>We are a drinking club with a running problem.</p>
+              <p className='text-center text-base md:text-[20px] md:pt-[1rem] pt-[1rem] text-black/90 font-bold font-arvo'>We are a drinking club with a running problem.</p>
               <p className='text-center pt-[1rem] text-sm font-arvo text-black/90 font-bold md:text-xl'>We drink beer to save water</p>
               <p className='text-center text-base font-arvo text-black/90 font-bold md:text-xl flex items-center justify-center gap-2'>Join us every Friday at 5pm!
                 <Image src='/image/beer1.svg' width={35} height={35} alt="beericon" className="animate-bounce"/>
@@ -136,7 +137,7 @@ const Hero = () => {
           <div  className="md:absolute top-[5rem] pr-[16px] pb-5 right-[8rem] font-arvo h-[35%] md:bg-red-100/80 w-fit rounded-lg">
             <div data-aos="fade-left" data-aos-duration="1000"  className="right-[24rem] h-[100%] bg-gray-50/90  px-[1rem] py-10 rounded-lg">
               <h1 className="font-bold text-2xl tracking-[5px]">Hiking with your running shoes ?</h1>
-              <p className="pt-3 leading-5">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from DGM Bigger  <br /> Twerk for more information else OTILO!</p>
+              <p className="pt-3 leading-5">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from XGM Bigger  <br /> Twerk for more information else <span className="underline text-red-400 font-semibold">OTILO!</span></p>
             </div>
 
             <div className="flex md:block px-[1rem]">
@@ -161,12 +162,24 @@ const Hero = () => {
             768: { slidesPerView: 3 },
             1024: { slidesPerView: 4 },
             }}
+
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+
             navigation={true}
             // pagination={{
             // clickable: true,
             // }}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper">
+
+              <SwiperSlide>
+                <div className='h-48 w-full overflow-hidden'>
+                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599268/IMG-20250226-WA0200_iiopxm.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                  </div>
+              </SwiperSlide>
               
               <SwiperSlide>
                 <div className='h-48 w-full overflow-hidden'>
@@ -252,15 +265,6 @@ const Hero = () => {
                     <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
                   </div>
               </SwiperSlide>
-
-              <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599268/IMG-20250226-WA0200_iiopxm.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
-                  </div>
-              </SwiperSlide>
-
-
-
           </Swiper>
                 
 
@@ -343,7 +347,7 @@ const Hero = () => {
                 <div><Image src='/image/isexz.png' width={90} height={90} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
                   <h2 className="md:text-2xl font-bold text-xs">UNSURE</h2>
-                  <p className="text-xs md:text-lg">It is not the size of the dog in the fight but rather the size of the fight in the DOG.</p>
+                  <p className="text-xs md:text-lg">The Hash is an escape canvas where we all ease out the stress of the outside world.</p>
                 </div>
               </div>
 
@@ -369,8 +373,8 @@ const Hero = () => {
               <div className="flex gap-1 pt-3 md:gap-3 w-fit">
                 <div><Image src='/image/iwork.png' width={150} height={150} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">I AM NOT AN HASHER</h2>
-                  <p className="text-xs md:text-lg">Every hasher is unique. We are fun-loving people who come together for the thrill of a great trail and the joy of a cold beer </p>
+                  <h2 className="md:text-2xl font-bold text-xs">I AM NOT A HASHER</h2>
+                  <p className="text-xs md:text-lg">Every hasher is unique. We are fun-loving people who come together for the thrill of a great trail and the joy of a cold beer.</p>
                 </div>
               </div>
 
@@ -394,7 +398,7 @@ const Hero = () => {
         <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col overflow-hidden items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
-          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">X GMs from 4 years ago...</h1>
+          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">XGMs from 4 years ago...</h1>
 
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
           
@@ -451,7 +455,7 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">X GM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
                 <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#OTILO </button>
               </div>
             </div>
@@ -480,7 +484,7 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">X GM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
                 <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
               </div>
             </div>
@@ -554,25 +558,25 @@ const Hero = () => {
               </SwiperSlide>
 
               {/* 7 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/trilogy.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/ebonyi.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 8 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/sierra.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/ikeja.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 9 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/fgals.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/oleh.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 10 */}
               {/* <SwiperSlide>
@@ -613,10 +617,10 @@ const Hero = () => {
               768: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
               }}
-              // autoplay={{
-              // delay: 5000,
-              // disableOnInteraction: false,
-              // }}
+              autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              }}
               pagination={{clickable: true,}}
               navigation={true}
               modules={[Autoplay, Navigation]} className="mySwiper">
@@ -634,10 +638,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -653,10 +658,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -672,10 +678,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -691,10 +698,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -710,10 +718,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -729,10 +738,11 @@ const Hero = () => {
                       <li>Sold by Haberdash</li>
                     </ul>
 
-                    <div>
+                    <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300">Pick me</button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
+                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -743,7 +753,7 @@ const Hero = () => {
         
         {/* Contact Us */}
         <div id="section10" className="px-[1rem] py-[1rem] md:px-[3rem] bg-gray-50/90  overflow-hidden">
-          <h1 className="text-center font-arvo text-2xl lg:text-4xl font-bold tracking-[5px] underline py-5">CONTACT US / MAKE A REPORT</h1>
+          <h1 className="text-center font-arvo text-2xl lg:text-4xl font-bold tracking-[5px] underline py-5 uppercase">complainant form</h1>
 
           <div className="lg:flex py-8 shadow-2xl justify-center px-[1rem] md:px-[3rem] items-center">
             {/* div A */}
@@ -753,7 +763,8 @@ const Hero = () => {
                 <label>Name</label>
                 <input type="text"
                 placeholder="Enter hash handle"
-                className="px-4 py-2 outline-none rounded text-gray-500"/>
+                disabled
+                className="px-4 py-2 outline-none rounded text-gray-500 placeholder-white placeholder:text-sm"/>
               </div>
               
               {/* Name of kennel */}
@@ -761,7 +772,8 @@ const Hero = () => {
                 <label>Kennel</label>
                 <input type="text"
                 placeholder="Enter kennel name"
-                className="px-4 py-2 outline-none rounded text-gray-500"/>
+                disabled
+                className="px-4 py-2 outline-none rounded text-gray-500 placeholder-white placeholder:text-sm"/>
               </div>
 
               {/* Subject */}
@@ -769,15 +781,17 @@ const Hero = () => {
                 <label>Subject Matter</label>
                 <input type="text"
                 placeholder="Enter a subject"
-                className="px-4 py-2 outline-none rounded text-gray-500"/>
+                disabled
+                className="px-4 py-2 outline-none rounded text-gray-500 placeholder-white placeholder:text-sm"/>
               </div>
 
               {/* Message */}
               <div className="font-arvo flex flex-col py-3">
                 <label>Message</label>
                 <textarea type="text"
-                placeholder="Enter your Message | Report"
-                className="px-4 py-2 outline-none rounded text-gray-500"/>
+                placeholder="Enter your Message "
+                disabled
+                className="px-4 py-2 outline-none rounded placeholder-white placeholder:text-sm"/>
               </div>
 
               <div className="flex items-center justify-center py-5">
@@ -790,6 +804,11 @@ const Hero = () => {
               <Image src='/image/climb.avif' width={700} height={700} alt="image" className="rounded"/>
             </div>
           </div>
+        </div>
+
+        {/* image before footer */}
+        <div className="flex items-center justify-center">
+          <Image src='/image/dc.jpg' width={1000} height={1000} alt="image" className=""/>
         </div>
     </div>
   )

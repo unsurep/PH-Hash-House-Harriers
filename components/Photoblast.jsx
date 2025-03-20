@@ -224,7 +224,7 @@ const Photoblast = () => {
     <div className={`${arvoFont.variable}`}>
     <div className='lg:pt-28 bg-black text-white/90 px-[1rem] md:px-[3rem] font-arvo'>
       <div className='flex items-center justify-center gap-5 py-12'>
-        <h1 className='text-center text-xl md:text-4xl font-bold tracking-[5px]'>PH H<sup>3</sup> PHOTO-BLAST</h1>
+        <h1 className='text-center text-xl md:text-4xl font-bold tracking-[5px]'>PHOTO-BLAST</h1>
         <audio src='/audio/by.mp3' typeof='mp3' controls className='bg-red-200/50 rounded'></audio>
       </div>
       
