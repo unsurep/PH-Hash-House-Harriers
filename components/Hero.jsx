@@ -116,14 +116,14 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         
-          id="section2" className="h-[20rem] font-arvo py-[3rem] overflow-hidden px-[3rem] bg-red-50 ">
-          <div className="space-y-5">
-            <h3 className="text-sm md:text-lg">A community of Runners and Beer lovers</h3>
-            <h3 className="text-sm md:text-3xl tracking-[5px]">Hash House Harriers</h3>
+          id="section2" className="h-[24rem] font-arvo py-[1rem] overflow-hidden px-[3rem] bg-red-50 ">
+          <div className="space-y-1">
+            <h3 className="font-bold text-xl tracking-[5px]">A community of Runners and Beer lovers</h3>
+            <h3 className="text-xl md:text-3xl tracking-[5px]">Hash House Harriers</h3>
           </div>
 
           <div className="pt-3">
-            <p className="text-sm md:text-[20px] leading-4 md:leading-6">Port Harcourt Hash House Harriers is a kennel of <br /> vibrant community that unites runners and beer lovers. <br /> We host weekly, non-competitive runs, to celebrate and <br /> promote physical fitness and friendship. Join us to  experience <br /> dynamic adventures and lasting connections ON ON!.</p>
+            <p className="text-base leading-5 md:leading-6">Port Harcourt Hash House Harriers is a kennel of <br /> vibrant community that unites runners and beer lovers. <br /> We host weekly, non-competitive runs, to celebrate and <br /> promote physical fitness and friendship. Join us to  experience <br /> dynamic adventures and lasting connections ON ON!.</p>
 
           </div>
         </section>
@@ -137,7 +137,7 @@ const Hero = () => {
           <div  className="md:absolute top-[5rem] pr-[16px] pb-5 right-[8rem] font-arvo h-[35%] md:bg-red-100/80 w-fit rounded-lg">
             <div data-aos="fade-left" data-aos-duration="1000"  className="right-[24rem] h-[100%] bg-gray-50/90  px-[1rem] py-10 rounded-lg">
               <h1 className="font-bold text-2xl tracking-[5px]">Hiking with your running shoes ?</h1>
-              <p className="pt-3 leading-5">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from XGM Bigger  <br /> Twerk for more information else <span className="underline text-red-400 font-semibold">OTILO!</span></p>
+              <p className="pt-3 leading-5 text-base">Hiking with your running shoes lacks proper ankle support, <br /> compromises stability and durability compared to proper hiking boots <br /> which provide better grip and stability. Confirm from XGM Bigger  <br /> Twerk for more information else <span className="underline text-red-400 font-semibold">OTILO!</span></p>
             </div>
 
             <div className="flex md:block px-[1rem]">
@@ -278,7 +278,7 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col items-center justify-center mx-auto pt-5 relative">
-            <p className="leading-8 pb-[1.5rem] text-sm md:text-xl px-[1rem]">“Hashing is a life style and cold beer heals all wound. <br /> We hash to promote physical fitness among hashers, <br /> We hash to get rid of weekend hangovers, <br /> We hash to acquire a good thirst and to satisfy it with beer and <br /> To persuade the older hashers they are not as old as they feel.”
+            <p className="leading-8 pb-[1.5rem] text-base md:text-xl px-[1rem]">“Hashing is a life style and cold beer heals all wound. <br /> We hash to promote physical fitness among hashers, <br /> We hash to get rid of weekend hangovers, <br /> We hash to acquire a good thirst and to satisfy it with beer and <br /> To persuade the older hashers they are not as old as they feel.”
             </p>
 
             <div className="pt-5 flex gap-5">
@@ -337,8 +337,8 @@ const Hero = () => {
               <div className="flex gap-1 md:gap-3 w-fit ">
                 <div><Image src='/image/ishoe.png' width={50} height={50} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo ">
-                  <h2 className="md:text-2xl font-bold text-xs">MR. BAD LEG</h2>
-                  <p className="text-xs md:text-lg">As a hasher, your hash gear is your identity. <br /> Make sure you always come with it.</p>
+                  <h2 className="text-base md:text-2xl font-bold ">MR. BAD LEG</h2>
+                  <p className="text-base md:text-lg">As a hasher, your hash gear is your identity. <br /> Make sure you always come with it.</p>
                 </div>
               </div>
 
@@ -346,8 +346,8 @@ const Hero = () => {
               <div className="flex gap-1 md:gap-3 w-fit">
                 <div><Image src='/image/isexz.png' width={90} height={90} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">UNSURE</h2>
-                  <p className="text-xs md:text-lg">The Hash is an escape canvas where we all ease out the stress of the outside world.</p>
+                  <h2 className="text-base md:text-2xl font-bold">UNSURE</h2>
+                  <p className="text-base md:text-lg">The Hash is an escape canvas where we all ease out the stress of the outside world.</p>
                 </div>
               </div>
 
@@ -355,8 +355,8 @@ const Hero = () => {
               <div className="flex gap-1 md:gap-3 w-fit">
                 <div><Image src='/image/ionon.png' width={150} height={150} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">AWAY RUNS</h2>
-                  <p className="text-xs md:text-lg">The Hash is a non-competitive club that brings together runners and beer lovers for a refreshing reward at the end.</p>
+                  <h2 className="md:text-2xl font-bold text-base">AWAY RUNS</h2>
+                  <p className="text-base md:text-lg">The Hash is a non-competitive club that brings together runners and beer lovers for a refreshing reward at the end.</p>
                 </div>
               </div>
 
@@ -364,8 +364,8 @@ const Hero = () => {
               <div className="flex gap-1  pt-3 md:gap-3 w-fit">
                 <div><Image src='/image/ican.png' width={50} height={50} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">BEER MERCHANT</h2>
-                  <p className="text-xs md:text-lg">We drink Lager to save water.</p>
+                  <h2 className="md:text-2xl font-bold text-base">BEER MERCHANT</h2>
+                  <p className="text-base md:text-lg">We drink Lager to save water.</p>
                 </div>
               </div>
 
@@ -373,8 +373,8 @@ const Hero = () => {
               <div className="flex gap-1 pt-3 md:gap-3 w-fit">
                 <div><Image src='/image/iwork.png' width={150} height={150} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">I AM NOT A HASHER</h2>
-                  <p className="text-xs md:text-lg">Every hasher is unique. We are fun-loving people who come together for the thrill of a great trail and the joy of a cold beer.</p>
+                  <h2 className="md:text-2xl font-bold text-base">I AM NOT A HASHER</h2>
+                  <p className="text-base md:text-lg">Every hasher is unique. We are fun-loving people who come together for the thrill of a great trail and the joy of a cold beer.</p>
                 </div>
               </div>
 
@@ -382,8 +382,8 @@ const Hero = () => {
                <div className="flex gap-1 pt-3 md:gap-3 w-fit">
                 <div><Image src='/image/iwatch.png' width={50} height={50} alt="hash gear" className=""/></div>
                 <div className="text-gray-100/90 font-arvo">
-                  <h2 className="md:text-2xl font-bold text-xs">REGO</h2>
-                  <p className="text-xs md:text-lg">Rego is a hasher's key. No Rego, No Hashing.</p>
+                  <h2 className="md:text-2xl font-bold text-base">REGO</h2>
+                  <p className="text-base md:text-lg">Rego is a hasher's key. No Rego, No Hashing.</p>
                 </div>
               </div>
             </div>
@@ -398,7 +398,7 @@ const Hero = () => {
         <div id="section7" className="bg-gray-50 pt-10  text-black/40 flex flex-col overflow-hidden items-center justify-center px-[1rem] md:px-[3rem] font-arvo">
           <h3 className="font-bold font-arvo text-4xl  text-black/90 tracking-[5px]">PH H<sup>3</sup> GM</h3>
           <h3 className="font-delius text-gray-400">&</h3>
-          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">XGMs from 4 years ago...</h1>
+          <h1 className="font-bold font-arvo text-2xl  mb-12 tracking-[5px] text-black/90">XGMs from 4 years Ago...</h1>
 
           <div className=" flex flex-col md:grid md:grid-cols-3 items-center gap-16">
           
@@ -426,8 +426,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">GM ALWAYS PUMPING 2025<span><Image src='/image/alwaysp.svg' width={20} height={20} alt="icon" className=""/></span></p>
-                <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#NWTS</button>
+                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">GM ALWAYS PUMPING 2025<span><Image src='/image/alwaysp.svg' width={20} height={20} alt="icon" className=""/></span></p>
+                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#NWTS</button>
               </div>
             </div>
 
@@ -455,8 +455,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
-                <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#OTILO </button>
+                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">XGM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#OTILO </button>
               </div>
             </div>
 
@@ -484,8 +484,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
-                <button className="ml-auto text-xs font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
+                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">XGM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
               </div>
             </div>
           </div>
@@ -600,7 +600,7 @@ const Hero = () => {
               </SwiperSlide> */}
             </Swiper>
           </div>
-          <h1 className="text-center py-5 text-red-400 font-extrabold">Remember, REGO is KEY!</h1>
+          <h1 className="text-center py-5 text-red-400 font-extrabold text-base">Remember, REGO is KEY!</h1>
         </div>
 
         {/* SECTION 9 MARKET */}
