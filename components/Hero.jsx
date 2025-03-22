@@ -92,8 +92,8 @@ const Hero = () => {
                     <ul className="space-y-3">
                       <li>Run No: 1009</li>
                       <li>Date: Friday 28<sup>th</sup> March, 2025</li>
-                      <li><b>Venue: Nwayi Enugu  GRA Phase II, Port Harcourt</b></li>
-                      <li>Hare: PH H3 Misma <b>x</b> Pussy Protector <b>x</b> </li>
+                      <li><b>Venue: Nwanyi Enugu Resturant, GRA Phase II, Port Harcourt</b></li>
+                      <li>Hare: PH H3 Misma </li>
                       <li>Rego: N1,500</li>
                       <li>Time: 5:00 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
