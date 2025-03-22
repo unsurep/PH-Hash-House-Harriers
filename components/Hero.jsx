@@ -426,8 +426,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">GM ALWAYS PUMPING 2025<span><Image src='/image/alwaysp.svg' width={20} height={20} alt="icon" className=""/></span></p>
-                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#NWTS</button>
+                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">GM ALWAYS PUMPING 2025<span><Image src='/image/alwaysp.svg' width={20} height={20} alt="icon" className=""/></span></p>
+                <button className="ml-auto text-sm font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#NWTS</button>
               </div>
             </div>
 
@@ -455,8 +455,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">XGM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
-                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#OTILO </button>
+                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM 1 SURE PLAYER 2022<span><Image src='/image/cancel.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <button className="ml-auto text-sm font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#OTILO </button>
               </div>
             </div>
 
@@ -484,8 +484,8 @@ const Hero = () => {
               </div>
 
               <div className="flex mt-3 font-arvo">
-                <p className="flex items-center gap-1 text-base hover:text-black hover:font-bold">XGM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
-                <button className="ml-auto text-base font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
+                <p className="flex items-center gap-1 text-sm hover:text-black hover:font-bold">XGM BIGGER TWERK 2020<span><Image src='/image/bbeer.svg' width={20} height={20} alt="image" className=""/></span></p>
+                <button className="ml-auto text-sm font-bold items-center flex animate-bounce border border-black p-2 rounded-md hover:bg-black hover:text-white">#P.O.S AFRICA</button>
               </div>
             </div>
           </div>
