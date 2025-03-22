@@ -58,7 +58,7 @@ const Hero = () => {
 
   const [text] =useTypewriter({
     words: ['Port Harcourt', 'Hash House Harriers','Port Harcourt Hash House Harriers'],
-    loop: 2, 
+    loop: 1, 
     onLoopDone: () => console.log(`loop completed after 3 runs.`)
   })
 
@@ -70,7 +70,7 @@ const Hero = () => {
               <h1 className="text-lg pt-[4rem] md:pt-[7rem] font-semibold flex gap-2 items-center justify-center text-center font-arvo tracking-[5px]"><span><Image src='/image/checkin.svg' width={40} height={40} alt="svg"/></span>Check-inn</h1>
               <h1 className='flex items-center  justify-center pt-[1rem] md:pt-[0.5rem] font-arvo head_text tracking-[5px] text-center'>{text}<Cursor cursorColor='red' /></h1>
               <p className='text-center text-base md:text-[20px] md:pt-[1rem] pt-[1rem] text-black/90 font-bold font-arvo'>We are a drinking club with a running problem.</p>
-              <p className='text-center pt-[1rem] text-sm font-arvo text-black/90 font-bold md:text-xl'>We drink beer to save water</p>
+              <p className='text-center pt-[0.5rem] text-sm font-arvo text-black/90 font-bold md:text-xl'>We drink beer to save water</p>
               <p className='text-center text-base font-arvo text-black/90 font-bold md:text-xl flex items-center justify-center gap-2'>Join us every Friday at 5pm!
                 <Image src='/image/beer1.svg' width={35} height={35} alt="beericon" className="animate-bounce"/>
               </p>
