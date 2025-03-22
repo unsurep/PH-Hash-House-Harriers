@@ -24,37 +24,31 @@ const Footer = () => {
                 <ul className='pt-2 flex flex-col gap-4'>
                     <li className='flex items-center gap-3'><FaPhone />0809-806-9000</li>
                     <li className='flex items-center gap-3'><MdEmail />ph-hash-house-harriers@gmail.com</li>
-                    <li className='flex items-center gap-3'><MdLocationOn />Port Harcourt on the map</li>
+                    <li className='flex items-center gap-3'><MdLocationOn className='text-red-500'/>Port Harcourt on the map</li>
                     <li className='flex items-center gap-3'><IoTimeSharp /> Fridays by 5:00pm</li>
                 </ul>
 
-                <div className='flex items-center pt-3 gap-3'>
+                <div className='flex items-center pt-5 gap-5'>
 
                     <SocialIcon
                         url="https://web.facebook.com/groups/420151324828306"
                         target="_blank"
-                        fgColor="gray"
-                        bgColor="transparent"
                         network="facebook"
-                        style={{ height: 40, width: 40 }}
+                        style={{ height: 30, width: 30, }}
                     />
 
                     <SocialIcon
                         url='https://www.tiktok.com/@unsureplayer?_t=ZM-8ugzO8TOuN4&_r=1'
                         target="_blank"
-                        fgColor="gray"
-                        bgColor="transparent"
                         network="tiktok"
-                        style={{ height: 40, width: 40 }}
+                        style={{ height: 30, width: 30 }}
                     />
 
                     <SocialIcon
                         url="https://www.youtube.com/@FabricatedHashChronicles-h1u/videos"
                         target="_blank"
-                        fgColor="gray"
-                        bgColor="transparent"
                         network="youtube"
-                        style={{ height: 40, width: 40 }}
+                        style={{ height: 30, width: 30 }}
                     />
                 </div>
             </div>
