@@ -97,7 +97,7 @@ const Hero = () => {
                       <li>Rego: N1,500</li>
                       <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
-                      <li className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' width={30} height={30} alt="whatsapp logo" /></span></li>
+                      <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={30} height={30} alt="whatsapp logo" /></span></li>
                     </ul>
                   </div>
 
