@@ -95,7 +95,7 @@ const Hero = () => {
                       <li><b>Venue: Nwanyi Enugu Resturant, GRA Phase II, Port Harcourt</b></li>
                       <li>Hare: PH H3 Misma </li>
                       <li>Rego: N1,500</li>
-                      <li>Time: 5:00 pm</li>
+                      <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
                       <li className="font-bold flex gap-2 items-center">Send evidencey of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' width={30} height={30} alt="whatsapp logo" /></span></li>
                     </ul>
