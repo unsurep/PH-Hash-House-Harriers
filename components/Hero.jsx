@@ -90,10 +90,10 @@ const Hero = () => {
                     </div>
                     <h3 className="font-semibold">Weekly Run Information :</h3>
                     <ul className="space-y-3">
-                      <li>Run No: 1008</li>
-                      <li>Date: Friday 21<sup>st</sup> March, 2025</li>
+                      <li>Run No: 1009</li>
+                      <li>Date: Friday 28<sup>th</sup> March, 2025</li>
                       <li><b>Venue: Nwayi Enugu  GRA Phase II, Port Harcourt</b></li>
-                      <li>Hare: PH H3 Mismanagement <b>x</b> Pussy Protector</li>
+                      <li>Hare: PH H3 Misma <b>x</b> Pussy Protector <b>x</b> </li>
                       <li>Rego: N1,500</li>
                       <li>Time: 5:00 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
@@ -116,7 +116,7 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         
-          id="section2" className="h-[24rem] font-arvo py-[1rem] overflow-hidden px-[3rem] bg-red-50 ">
+          id="section2" className="h-[24rem] md:h-[17rem] font-arvo py-[1rem] overflow-hidden px-[3rem] bg-red-50 ">
           <div className="space-y-1">
             <h3 className="font-bold text-xl tracking-[5px]">A community of Runners and Beer lovers</h3>
             <h3 className="text-xl md:text-3xl tracking-[5px]">Hash House Harriers</h3>
