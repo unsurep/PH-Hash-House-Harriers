@@ -79,7 +79,7 @@ const Hero = () => {
             {/* modal */}
             <div className="flex items-center justify-center pt-[1rem] min-h-[30%]">
              
-              <button className="bt bg-black text-white p-4 rounded hover:bg-gray-200 hover:text-black bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Our Weekly Run Information:</button>
+              <button className="bt bg-black text-white p-4 rounded-lg hover:bg-gray-200 hover:text-black bounce-in-top font-arvo border border-black hover:border hover:border-black " onClick={()=>document.getElementById('my_modal_4').showModal()}>Our Weekly Run Information:</button>
               <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-11/12 max-w-5xl font-arvo">
                   <h3 className="font-bold text-lg ">Hashers RU!!!</h3>
@@ -89,7 +89,7 @@ const Hero = () => {
                       {/* <h3 className="text-xs font-arvo">#NWTS</h3> */}
                       <h3 className="text-sm font-bold font-arvo">APRIL FOOL SPECIAL RUN</h3>
                     </div>
-                    <h3 className="font-semibold">Weekly Run Information :</h3>
+                    {/* <h3 className="font-semibold">Weekly Run Information :</h3> */}
 
                     <div className="flex items-center">
                       <ul className="space-y-3">
