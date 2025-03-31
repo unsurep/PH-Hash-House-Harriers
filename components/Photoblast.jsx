@@ -238,7 +238,7 @@ const Photoblast = () => {
         {/* 2 */}
         <div className='flex flex-col gap-5 ml-auto'>
           <div className='hidden lg:flex gap-5'>
-            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s6.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
             <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
             <Image src='/image/s3.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
           </div>
@@ -246,7 +246,7 @@ const Photoblast = () => {
           {/* 3 */}
           <div className='grid grid-cols-1 md:flex gap-5'>
             <Image src='/image/s5.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
-            <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
             <Image src='/image/s2.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
           </div>
         </div>

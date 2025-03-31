@@ -79,26 +79,34 @@ const Hero = () => {
             {/* modal */}
             <div className="flex items-center justify-center pt-[1rem] min-h-[30%]">
              
-              <button className="btn bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Our Weekly Run Information:</button>
+              <button className="bt bg-black text-white p-4 rounded hover:bg-gray-200 hover:text-black bounce-in-top font-arvo border border-black hover:border hover:border-black" onClick={()=>document.getElementById('my_modal_4').showModal()}>Our Weekly Run Information:</button>
               <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-11/12 max-w-5xl font-arvo">
                   <h3 className="font-bold text-lg ">Hashers RU!!!</h3>
                   <div className="flex flex-col space-y-4">
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 py-">
                       <Image src='/image/logo.png' width={50} height={50} alt="logo"/>
-                      <h3 className="text-xs font-arvo">#NWTS</h3>
+                      {/* <h3 className="text-xs font-arvo">#NWTS</h3> */}
+                      <h3 className="text-sm font-bold font-arvo">APRIL FOOL SPECIAL RUN</h3>
                     </div>
                     <h3 className="font-semibold">Weekly Run Information :</h3>
-                    <ul className="space-y-3">
-                      <li>Run No: 1009</li>
-                      <li>Date: Friday 28<sup>th</sup> March, 2025</li>
-                      <li><b>Venue: Nwanyi Enugu Resturant, GRA Phase II, Port Harcourt</b></li>
-                      <li>Hare: PH H3 Misma </li>
-                      <li>Rego: N1,500</li>
+
+                    <div className="flex items-center">
+                      <ul className="space-y-3">
+                      <li>Run No: 1010</li>
+                      <li>Date: Friday 4<sup>th</sup> April, 2025</li>
+                      <li><b>Venue: No. 6 Ndoni Street behind Genesis Cinema, GRA Phase II.</b></li>
+                      <li>Hare: PH H3 Misma. </li>
+                      <li>Rego: N3,000</li>
                       <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
-                      <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={30} height={30} alt="whatsapp logo" /></span></li>
-                    </ul>
+                      <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={50} height={50} alt="whatsapp logo" /></span></li>
+                      </ul>
+
+                      <div className="w-full flex justify-center">
+                        <Image src='/image/s6.jpg' width={270} height={270} alt="image" className=""/>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="modal-action">
@@ -508,7 +516,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 6000,
+              delay: 10000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -518,16 +526,55 @@ const Hero = () => {
               {/* 1 */}
               <SwiperSlide>
                 <div>
-                  <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
-                {/* 2 */}
+               
+
+
+              {/* delete after april fool run */}
               <SwiperSlide>
+                <div>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+
+              {/* delete after april fool run */}
+              <SwiperSlide>
+                <div>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+
+
+            
+
+
+
+
+               {/* 2 */}
+               <SwiperSlide>
                 <div>
                   <Image src="/image/bobc.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
+
+
+
+
+
+
+
+
 
                 {/* 3 */}
               <SwiperSlide>
@@ -575,6 +622,35 @@ const Hero = () => {
               <SwiperSlide>
                 <div>
                   <Image src="/image/oleh.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* delete after april fool run */}
+              <SwiperSlide>
+                <div>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+
+              {/* delete after april fool run */}
+              <SwiperSlide>
+                <div>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+
+              {/* delete after april fool run */}
+              <SwiperSlide>
+                <div>
+                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+
+                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
@@ -627,6 +703,29 @@ const Hero = () => {
 
                 {/* New swiper */}
 
+                 {/* 7 */}
+                 <SwiperSlide>
+                  <div className="flex flex-col py-5 gap-5 bg-pink-100 px-3">
+                    <div>
+                      <Image src='/image/s7.jpg' width={100} height={100} alt="image" className="rounded-lg"/>
+                    </div>
+                    <ul className="text-base ">
+                      <li className="font-semibold">N7,000</li>
+                      <li>Sold by Haberdash</li>
+                    </ul>
+
+                    <div className="flex mx-auto">
+                      <button 
+                      onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700 "><IoLogoWhatsapp className="text-2xl" /></span></button>
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+
+
+
                 {/* 1 */}
                 <SwiperSlide>
                   <div className="flex flex-col py-5 gap-5 bg-gray-100 px-3">
@@ -641,8 +740,8 @@ const Hero = () => {
                     <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
-                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700"><IoLogoWhatsapp className="text-2xl"/></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -661,8 +760,8 @@ const Hero = () => {
                     <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
-                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700"><IoLogoWhatsapp className="text-2xl"/></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -681,8 +780,8 @@ const Hero = () => {
                     <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
-                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700"><IoLogoWhatsapp className="text-2xl"/></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -701,8 +800,8 @@ const Hero = () => {
                     <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
-                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700"><IoLogoWhatsapp className="text-2xl"/></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -721,8 +820,8 @@ const Hero = () => {
                     <div className="flex mx-auto">
                       <button 
                       onClick={() => window.open("https://wa.me/2347032913719", "_blank")}
-                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Pick me
-                      <span className="text-green-700"><IoLogoWhatsapp /></span></button>
+                      className="text-base bg-gray-100 p-2 rounded-lg w-fit hover:bg-gray-300 flex items-center gap-3 border-green-400 border-solid border-2">Buy
+                      <span className="text-green-700"><IoLogoWhatsapp className="text-2xl"/></span></button>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -746,6 +845,9 @@ const Hero = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+
+
+                
             </Swiper>
           </div>
 
