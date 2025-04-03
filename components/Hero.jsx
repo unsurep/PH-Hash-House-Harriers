@@ -96,7 +96,7 @@ const Hero = () => {
                       <li>Run No: 1010</li>
                       <li>Date: Friday 4<sup>th</sup> April, 2025</li>
                       <li><b>Venue: No. 6 Ndoni Street behind Genesis Cinema, GRA Phase II.</b></li>
-                      <li>Hare: PH H3 Misma. </li>
+                      <li>Hare: PH H3 Misma | <span className="font-semibold">Un-holy sainT</span> </li>
                       <li>Rego: N3,000</li>
                       <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
