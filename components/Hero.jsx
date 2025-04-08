@@ -86,26 +86,26 @@ const Hero = () => {
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center gap-1 py-">
                       <Image src='/image/logo.png' width={50} height={50} alt="logo"/>
-                      {/* <h3 className="text-xs font-arvo">#NWTS</h3> */}
-                      <h3 className="text-sm font-bold font-arvo">APRIL FOOL SPECIAL RUN</h3>
+                      <h3 className="text-xs font-arvo">#NWTS</h3>
+                     
                     </div>
-                    {/* <h3 className="font-semibold">Weekly Run Information :</h3> */}
+                    <h3 className="font-semibold">Weekly Run Information :</h3>
 
                     <div className="flex items-center">
                       <ul className="space-y-3">
-                      <li>Run No: 1010</li>
-                      <li>Date: Friday 4<sup>th</sup> April, 2025</li>
-                      <li><b>Venue: No. 6 Ndoni Street behind Genesis Cinema, GRA Phase II.</b></li>
-                      <li>Hare: PH H3 Misma | <span className="font-semibold">Un-holy sainT</span> </li>
-                      <li>Rego: N3,000</li>
+                      <li>Run No: 1011</li>
+                      <li>Date: Friday 11<sup>th</sup> April, 2025</li>
+                      <li><b>Venue: Nwanyi Enugu No. 9 Bimko crescent by Casablanca Junction GRA Phase II.</b></li>
+                      <li>Hare: PH H3 Misma  </li>
+                      <li>Rego: N1,500</li>
                       <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
                       <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={50} height={50} alt="whatsapp logo" /></span></li>
                       </ul>
 
-                      <div className="w-full flex justify-center">
+                      {/* <div className="w-full flex justify-center">
                         <Image src='/image/s6.jpg' width={270} height={270} alt="image" className=""/>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
@@ -183,94 +183,159 @@ const Hero = () => {
             modules={[Pagination, Autoplay, Navigation]}
             className="mySwiper">
 
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className='h-48 w-full overflow-hidden'>
                     <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599268/IMG-20250226-WA0200_iiopxm.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+
+                   
                   </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599057/IMG-20250127-WA0090_byqiol.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599057/IMG-20250127-WA0090_byqiol.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/6.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599093/IMG-20250226-WA0181_bdgrka.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
-                  </div>
-              </SwiperSlide>
+                <div className=' w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599093/IMG-20250226-WA0181_bdgrka.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
 
-              <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599103/IMG-20250226-WA0185_aztgr7.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                    <Image src='/image/cartoon/b.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599111/IMG-20250226-WA0183_abmju2.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599103/IMG-20250226-WA0185_aztgr7.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/2.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
+                  </div>
+              </SwiperSlide>
+
+
+              <SwiperSlide>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599111/IMG-20250226-WA0183_abmju2.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/4.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599125/IMG-20250226-WA0187_ontlcb.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599125/IMG-20250226-WA0187_ontlcb.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/5.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599130/IMG-20250226-WA0188_llnkam.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599130/IMG-20250226-WA0188_llnkam.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/8.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599144/IMG-20250226-WA0190_kl0scm.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599144/IMG-20250226-WA0190_kl0scm.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/9.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599150/IMG-20250226-WA0191_uejhnr.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599150/IMG-20250226-WA0191_uejhnr.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/10.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599182/IMG-20250226-WA0195_inzdiw.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className=' w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599182/IMG-20250226-WA0195_inzdiw.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/11.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599136/IMG-20250226-WA0189_q2ns0z.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599136/IMG-20250226-WA0189_q2ns0z.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+                    <Image src='/image/cartoon/12.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599172/IMG-20250226-WA0193_aae8ow.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599172/IMG-20250226-WA0193_aae8ow.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/15.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599248/IMG-20250226-WA0197_o9oz9f.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599248/IMG-20250226-WA0197_o9oz9f.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+                    <Image src='/image/cartoon/16.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599260/IMG-20250226-WA0199_altyic.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599260/IMG-20250226-WA0199_altyic.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/17.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
 
               <SwiperSlide>
-                <div className='h-48 w-full overflow-hidden'>
-                    <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/19.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
+                  </div>
+              </SwiperSlide>
+
+
+              <SwiperSlide>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/20.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
+                  </div>
+              </SwiperSlide>
+
+
+              <SwiperSlide>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/22.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
+                  </div>
+              </SwiperSlide>
+
+
+              <SwiperSlide>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/23.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
+                  </div>
+              </SwiperSlide>
+
+
+              <SwiperSlide>
+                <div className='w-full overflow-hidden'>
+                    {/* <Image src='https://res.cloudinary.com/dvkmv0k18/image/upload/v1740599253/IMG-20250226-WA0198_zxstru.jpg' width={100} height={100}alt='image' className='rounded-[12px] h-full w-full object-cover'/> */}
+
+                    <Image src='/image/cartoon/24.png' width={100} height={100} alt='image' className="rounded-[12px]"/>
                   </div>
               </SwiperSlide>
           </Swiper>
