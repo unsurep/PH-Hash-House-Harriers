@@ -581,7 +581,7 @@ const Hero = () => {
               1024: { slidesPerView: 4 },
               }}
               autoplay={{
-              delay: 10000,
+              delay: 8000,
               disableOnInteraction: false,
               }}
               // pagination={{clickable: true,}}
@@ -589,43 +589,15 @@ const Hero = () => {
               modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
 
               {/* 1 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
+                  <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
 
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+             
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
                
-
-
-              {/* delete after april fool run */}
-              <SwiperSlide>
-                <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
-
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
-                </div>
-              </SwiperSlide>
-
-
-              {/* delete after april fool run */}
-              <SwiperSlide>
-                <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
-
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
-                </div>
-              </SwiperSlide>
-
-
-
-            
-
-
-
-
                {/* 2 */}
                <SwiperSlide>
                 <div>
@@ -663,11 +635,11 @@ const Hero = () => {
               </SwiperSlide>
 
               {/* 6 */}
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div>
                   <Image src="/image/lh3.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
               {/* 7 */}
               <SwiperSlide>
@@ -690,35 +662,7 @@ const Hero = () => {
                 </div>
               </SwiperSlide>
 
-              {/* delete after april fool run */}
-              <SwiperSlide>
-                <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
-
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
-                </div>
-              </SwiperSlide>
-
-
-              {/* delete after april fool run */}
-              <SwiperSlide>
-                <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
-
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
-                </div>
-              </SwiperSlide>
-
-
-              {/* delete after april fool run */}
-              <SwiperSlide>
-                <div>
-                  {/* <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/> */}
-
-                  <Image src="/image/s6.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
-                </div>
-              </SwiperSlide>
-
+            
               {/* 10 */}
               {/* <SwiperSlide>
                 <div>
