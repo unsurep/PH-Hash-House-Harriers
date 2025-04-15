@@ -93,14 +93,14 @@ const Hero = () => {
 
                     <div className="flex items-center">
                       <ul className="space-y-3">
-                      <li>Run No: 1011</li>
-                      <li>Date: Friday 11<sup>th</sup> April, 2025</li>
+                      <li>Run No: 1012</li>
+                      <li>Date: Friday 18<sup>th</sup> April, 2025</li>
                       <li><b>Venue: Nwanyi Enugu No. 9 Bimko crescent by Casablanca Junction GRA Phase II.</b></li>
-                      <li>Hare: PH H3 Misma  </li>
+                      <li>Hare: PH H<sup>3</sup> Misma  </li>
                       <li>Rego: N1,500</li>
                       <li>Time: 5:30 pm</li>
                       <li><b>Rego Account: 1019116023 UBA</b></li>
-                      <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={50} height={50} alt="whatsapp logo" /></span></li>
+                      <li onClick={() => window.open("https://wa.me/2349122146944", "_blank")} className="cursor-pointer font-bold flex gap-2 items-center">Send evidence of payment to Pussy eyes on 09122146944 <span><Image src='/image/whatsapp.svg' className="cursor-pointer animate-bounce" width={50} height={50} alt="whatsapp logo" /></span></li>
                       </ul>
 
                       {/* <div className="w-full flex justify-center">
@@ -123,8 +123,8 @@ const Hero = () => {
         <section
           data-aos="fade-up"
           data-aos-duration="1000"
-        
           id="section2" className="h-[24rem] md:h-[17rem] font-arvo py-[1rem] overflow-hidden px-[3rem] bg-red-50 ">
+
           <div className="space-y-1">
             <h3 className="font-bold text-xl tracking-[5px]">A community of Runners and Beer lovers</h3>
             <h3 className="text-xl md:text-3xl tracking-[5px]">Hash House Harriers</h3>

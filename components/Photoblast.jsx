@@ -225,7 +225,7 @@ const Photoblast = () => {
     <div className='lg:pt-28 bg-black text-white/90 px-[1rem] md:px-[3rem] font-arvo'>
       <div className='flex items-center justify-center gap-5 py-12'>
         <h1 className='text-center text-xl md:text-4xl font-bold tracking-[5px]'>PHOTO-BLAST</h1>
-        <audio src='/audio/by.mp3' typeof='mp3' controls className='bg-red-200/50 rounded'></audio>
+        <audio src='/audio/furthest.mp3' typeof='mp3' controls className='bg-red-200/50 rounded'></audio>
       </div>
       
       {/* top image */}
@@ -245,7 +245,7 @@ const Photoblast = () => {
 
           {/* 3 */}
           <div className='grid grid-cols-1 md:flex gap-5'>
-            <Image src='/image/s6.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
+            <Image src='/image/s8.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
             <Image src='/image/s1.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
             <Image src='/image/s5.jpg' width={200} height={200} alt='image' className='rounded transition duration-300 hover:brightness-75 hvr-float-shadow'/>
           </div>
