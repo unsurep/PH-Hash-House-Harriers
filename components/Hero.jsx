@@ -589,19 +589,19 @@ const Hero = () => {
               modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
 
               {/* 1 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/ap.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
 
              
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
                
                {/* 2 */}
                <SwiperSlide>
                 <div>
-                  <Image src="/image/bobc.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
@@ -620,6 +620,13 @@ const Hero = () => {
                 </div>
               </SwiperSlide>
 
+              {/* 12 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/b25.png" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
               {/* 4 */}
               <SwiperSlide>
                 <div>
@@ -635,16 +642,23 @@ const Hero = () => {
               </SwiperSlide>
 
               {/* 6 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/lh3.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 7 */}
               <SwiperSlide>
                 <div>
                   <Image src="/image/ebonyi.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                </div>
+              </SwiperSlide>
+
+              {/* 12 */}
+              <SwiperSlide>
+                <div>
+                  <Image src="/image/b25.png" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
               </SwiperSlide>
 
@@ -664,25 +678,25 @@ const Hero = () => {
 
             
               {/* 10 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/akwa.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 11 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/pan.jpg" width={300} height={300} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={300} height={300} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
 
               {/* 12 */}
-              {/* <SwiperSlide>
+              <SwiperSlide>
                 <div>
-                  <Image src="/image/bob.jpg" width={200} height={200} alt='image' className='rounded-[20px]'/>
+                  <Image src="/image/b25.png" width={200} height={200} alt='image' className='rounded-[20px]'/>
                 </div>
-              </SwiperSlide> */}
+              </SwiperSlide>
             </Swiper>
           </div>
           <h1 className="text-center py-5 text-red-400 font-extrabold text-base">Remember, REGO is KEY!</h1>

@@ -81,7 +81,7 @@ const Navbar=()=>{
                     </Link>
 
                     <>
-                        <li className="">#NWTS</li>
+                        <li className="font-bold ">Who is cumin</li>
                     </>
 
                     {/* <Link href={'/register'}>
@@ -129,7 +129,7 @@ const Navbar=()=>{
                                 <li>Misma</li>
                             </Link>
 
-                            <li>#NWTS</li>
+                            <li>Who is cumin</li>
 
                             
                         </ul> :
